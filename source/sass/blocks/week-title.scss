@@ -1,0 +1,7 @@
+@use "../global/variables.scss";
+
+.week-title__text {
+  @media (min-width: variables.$screen-desktop) {
+    order: 2;
+  }
+}

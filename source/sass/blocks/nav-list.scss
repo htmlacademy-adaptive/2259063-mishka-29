@@ -16,4 +16,10 @@
     order: 2;
     width: 43.62vw;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: absolute;
+    gap: 0 41px;
+    max-width: 435px;
+  }
 }

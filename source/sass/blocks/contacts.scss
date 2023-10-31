@@ -6,6 +6,13 @@
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 57px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 0;
+  }
 }
 
 .contacts__wrapper {
@@ -16,6 +23,13 @@
     padding-top: 68px;
     padding-bottom: 49px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    margin: 0;
+    padding-top: 71px;
+    padding-left: 175px;
+    padding-bottom: 105px;
+  }
 }
 
 .contacts__container {
@@ -23,6 +37,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    display: block;
+    width: 290px;
   }
 }
 
@@ -34,6 +53,13 @@
     line-height: 50px;
     padding-bottom: 49px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 34.5px;
+    padding-top: 79px;
+  }
 }
 
 .contacts__mail {
@@ -42,10 +68,14 @@
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 0;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts__button {
-  margin: 0 9.375vw;
+  margin: 0 9.38vw;
 
   @media (min-width: variables.$screen-tablet) {
     width: fit-content;
@@ -55,6 +85,12 @@
     line-height: 20px;
     margin: 0 auto;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: absolute;
+    left: 228px;
+    bottom: 105px;
+  }
 }
 
 .contacts__location {
@@ -62,5 +98,12 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 55px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    margin: 0;
+    padding-top: 71px;
+    padding-bottom: 105px;
+    flex-basis: 527px;
   }
 }

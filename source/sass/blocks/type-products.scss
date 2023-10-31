@@ -1,23 +1,5 @@
 @use "../global/variables.scss";
 
-.type-products {
-  @media (min-width: variables.$screen-tablet) {
-    &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 24px;
-      background-image: url(../img/zigzag_line_hero.svg);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: auto;
-      z-index: 0;
-      position: absolute;
-      bottom: -6px;
-    }
-  }
-}
-
 .type-products__link {
   padding: 24px 30px 31px;
   color: #ffffff;
@@ -64,20 +46,16 @@
   }
 
   &--interior {
-    &:hover {
-      &::before {
-        transition: 0.2s;
-        transform: translateY(-5px);
-      }
+    &:hover::before {
+      transition: 0.2s;
+      transform: translateY(-5px);
     }
   }
 
   &--toys {
-    &:hover {
-      &::before {
-        transition: 0.2s;
-        transform: translateY(-5px);
-      }
+    &:hover::before {
+      transition: 0.2s;
+      transform: translateY(-5px);
     }
   }
 
@@ -93,11 +71,9 @@
   }
 
   &:active {
-    .hero-link__title {
-      &::after {
-        transition: 0.2s;
-        opacity: 0.3;
-      }
+    .hero-link__title::after {
+      transition: 0.2s;
+      opacity: 0.3;
     }
   }
 }

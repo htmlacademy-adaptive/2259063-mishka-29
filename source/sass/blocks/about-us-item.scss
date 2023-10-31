@@ -8,6 +8,7 @@
 
   &--eco {
     margin-bottom: 30px;
+
     &::before {
       content: "";
       background-image: url("../img/stack/sprite.svg#about_eco");
@@ -23,6 +24,7 @@
 
   &--money {
     margin-bottom: 35px;
+
     &::before {
       content: "";
       background-image: url("../img/stack/sprite.svg#about_money");
@@ -38,6 +40,7 @@
 
   &--like {
     margin-bottom: 32px;
+
     &::before {
       content: "";
       background-image: url("../img/stack/sprite.svg#about_like");
@@ -53,6 +56,7 @@
 
   &--thread {
     margin-bottom: 33px;
+
     &::before {
       content: "";
       background-image: url("../img/stack/sprite.svg#about_thread");
@@ -68,6 +72,7 @@
 
   &--support {
     margin-bottom: 32px;
+
     &::before {
       content: "";
       background-image: url("../img/stack/sprite.svg#about_support");

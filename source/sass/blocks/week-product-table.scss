@@ -1,11 +1,9 @@
 @use "../global/variables.scss";
 
 .week-product-table__rows {
-  display: block;
   padding: 10px 0;
   border-bottom: 1px solid #ececec;
   display: flex;
-
 }
 
 .week-product-table__description {

@@ -33,6 +33,11 @@
     padding: 22px 0 20px;
     position: relative;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    margin: 0 auto;
+    padding: 9px 0 7px;
+  }
 }
 
 .main-nav__logo {
@@ -120,7 +125,11 @@
     align-items: flex-start;
     background-color: inherit;
     color: #000000;
-    width: 668px;
+    width: 86.98vw;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    width: 1050px;
   }
 }
 
@@ -128,6 +137,11 @@
   position: relative;
   padding: 26.5px 30px 28.5px 76px;
   border-top: 1px solid #ececec;
+
+  &--sale,
+  &--new {
+    display: none;
+  }
 
   &--search {
     &::before {
@@ -229,16 +243,25 @@
       }
     }
 
-    &--catalog {
-      padding: 20.5px 0;
-    }
-
-    &--order {
-      padding: 20.5px 0;
-    }
-
     &--secondary {
       flex-basis: 167px;
+      padding: 20.5px 0;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--catalog,
+    &--order {
+      font-size: 17px;
+      line-height: 24px;
+      padding: 32.5px 0 31.5px;
+    }
+
+    &--sale,
+    &--new {
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
     }
   }
 }
@@ -274,8 +297,11 @@
     padding: 20.5px 0;
     order: 3;
     position: absolute;
-    display: block;
     width: 100%;
     bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    bottom: -60px;
   }
 }

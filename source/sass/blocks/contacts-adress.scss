@@ -18,6 +18,7 @@
 
 .contacts-adress__description {
   word-break: break-all;
+
   @media (min-width: variables.$screen-tablet) {
     flex-basis: 257px;
   }

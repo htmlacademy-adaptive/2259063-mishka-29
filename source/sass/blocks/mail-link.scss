@@ -3,6 +3,7 @@
 .mail-link__text {
   position: relative;
   word-break: break-all;
+
   &::after {
     content: "";
     display: block;
