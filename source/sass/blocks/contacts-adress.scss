@@ -1,0 +1,24 @@
+@use "../global/variables.scss";
+
+.contacts-adress {
+  display: flex;
+  color: #444444;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: start;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 17px;
+  }
+}
+
+.contacts-adress__title {
+  flex-basis: 76px;
+}
+
+.contacts-adress__description {
+  word-break: break-all;
+  @media (min-width: variables.$screen-tablet) {
+    flex-basis: 257px;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../global/variables.scss";
+
+.reviews-author {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  display: block;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 18px;
+  }
+}
+
+.reviews-author__mail {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 5px;
+  display: block;
+}

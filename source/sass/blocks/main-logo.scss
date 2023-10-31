@@ -1,0 +1,22 @@
+@use "../global/variables.scss";
+
+.main-logo {
+  width: fit-content;
+}
+
+.main-logo__image {
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: block;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

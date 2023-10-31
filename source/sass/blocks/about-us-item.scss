@@ -1,0 +1,116 @@
+@use "../global/variables.scss";
+
+.about-us-item__desicription {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &--eco {
+    margin-bottom: 30px;
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_eco");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 33px;
+      height: 38px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &--money {
+    margin-bottom: 35px;
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_money");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 47px;
+      height: 27px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &--like {
+    margin-bottom: 32px;
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_like");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 34px;
+      height: 27px;
+      margin-bottom: 21px;
+    }
+  }
+
+  &--thread {
+    margin-bottom: 33px;
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_thread");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 35px;
+      height: 34px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &--support {
+    margin-bottom: 32px;
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_support");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 55px;
+      height: 23px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &--gift {
+    &::before {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#about_gift");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: block;
+      width: 33px;
+      height: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.about-us__item {
+  @media (min-width: variables.$screen-tablet) {
+    &--money {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &--like {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+}

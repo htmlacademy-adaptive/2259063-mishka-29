@@ -1,0 +1,56 @@
+@use "../global/variables.scss";
+
+.hero {
+  background-image:  url("../img/hero/hero_mobile.webp");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: #e2e2e2;
+  min-height: clamp(520px, 97.13vw, 746px);
+  position: relative;
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero/hero_mobile@2x.webp");
+  }
+
+  @media (min-width: 447px) {
+    background-image:  url("../img/hero/hero_tablet.webp");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero_tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: 769px) {
+    background-image:  url("../img/hero/hero_desktop.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero_desktop@2x.webp");
+    }
+  }
+}
+
+.hero__container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+  }
+}
+
+.hero__title {
+  text-align: center;
+  font-size: clamp(27px, 5vw, 43px);
+  line-height: clamp(30px, 5vw, 57px);
+  padding: 90px 30px 249px;
+  width: clamp(260px, 87vw, 668px);
+  margin: 0 auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 154px;
+  }
+}

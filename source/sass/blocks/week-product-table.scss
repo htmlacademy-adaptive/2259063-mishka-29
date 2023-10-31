@@ -1,0 +1,21 @@
+@use "../global/variables.scss";
+
+.week-product-table__rows {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+
+}
+
+.week-product-table__description {
+  padding: 0;
+
+  &:first-child {
+    flex-basis: 97px;
+  }
+
+  &:last-child {
+    flex-basis: 162px;
+  }
+}

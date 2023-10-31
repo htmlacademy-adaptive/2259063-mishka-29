@@ -1,0 +1,13 @@
+@use "../global/variables.scss";
+
+.about-us-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(105px, auto));
+
+  }
+}

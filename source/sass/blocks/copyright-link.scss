@@ -1,0 +1,30 @@
+@use "../global/variables.scss";
+
+.copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #000000;
+  width: fit-content;
+
+  &:hover {
+    .copyright-link__logo path {
+      transition: 0.2s;
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .copyright-link__logo path {
+      transition: 0.1s;
+      fill-opacity: 0.3;
+    }
+  }
+}
+
+.copyright-link__description {
+font-size: 19px;
+font-weight: 700;
+line-height: 18px;
+}

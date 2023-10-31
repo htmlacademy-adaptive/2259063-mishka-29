@@ -1,0 +1,136 @@
+@use "../global/variables.scss";
+
+.week-product {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag_line.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    position: relative;
+    z-index: 0;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    &::after {
+      background-size: cover;
+      height: 17px;
+    }
+  }
+}
+
+.week-product__wrapper {
+  padding-top: 31px;
+  padding-bottom: 36px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 39.5px;
+    padding-bottom: 52px;
+  }
+}
+
+.week-product__container {
+  @media (min-width: variables.$screen-tablet) {
+    &--primary {
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: repeat(3, minmax(90px, auto));
+      column-gap: 42px;
+    }
+
+    &--secondary {
+      align-self: end;
+    }
+  }
+}
+
+.week-product__picture {
+  @media (min-width: variables.$screen-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+}
+
+.week-product__table {
+  width: 100%;
+  padding-bottom: 27px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media (min-width: variables.$screen-tablet) {
+    grid-row: 2 / 3;
+    padding-bottom: 0;
+  }
+}
+
+.week-product__title {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 17.5px;
+
+  &::after {
+    content: "Товар недели";
+    display: block;
+    color: #63d1bb;
+    font-family: variables.$font-ptsans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      text-align: center;
+      line-height: 17px;
+      flex-basis: 100px;
+    }
+  }
+}
+
+.week-product__description {
+  padding-bottom: 28px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+
+  &--price {
+    color: #444;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 25.5px 0;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+
+    &--price {
+      font-size: 20px;
+      padding: 0;
+      padding-bottom: 33px;
+    }
+  }
+}
+
+.week-product__button {
+  width: 100%;
+  background: inherit;
+}

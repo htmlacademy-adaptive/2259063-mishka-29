@@ -1,0 +1,31 @@
+@use "../global/variables.scss";
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 29px;
+}
+
+.social-list__link {
+  display: flex;
+  padding: 3px;
+}
+
+.social-list__logo {
+  &:hover {
+    path {
+      transition: 0.2s;
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    path {
+      transition: 0.1s;
+      fill-opacity: 0.3;
+    }
+  }
+}
