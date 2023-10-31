@@ -31,6 +31,7 @@
 .week-product__wrapper {
   padding-top: 31px;
   padding-bottom: 36px;
+  max-width: 1150px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 39.5px;

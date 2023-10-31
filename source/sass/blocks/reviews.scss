@@ -55,6 +55,7 @@
 .reviews__wrapper {
   padding-bottom: 45px;
   position: relative;
+  max-width: 1150px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 115px;

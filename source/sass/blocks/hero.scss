@@ -56,6 +56,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 
   @media (min-width: variables.$screen-tablet) {
     display: flex;

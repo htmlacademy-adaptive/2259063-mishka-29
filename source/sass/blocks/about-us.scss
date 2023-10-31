@@ -2,6 +2,7 @@
 
 .about-us__wrapper {
   padding-top: 31px;
+  max-width: 1150px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 55.5px;
