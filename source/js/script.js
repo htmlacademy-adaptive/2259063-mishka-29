@@ -6,6 +6,8 @@ let modal = document.querySelector(".page__modal");
 let sizeButton = document.querySelectorAll(".size__button");
 let size = document.querySelector(".size");
 let orderButton = document.querySelector(".week-product__button");
+// let review = document.querySelectorAll(".slider__item")
+// let sliderButton = document.querySelectorAll(".slider-buttons__button")
 
 // -- nojs реализация.
 menu.classList.remove("main-nav__list--noscript");
@@ -36,3 +38,5 @@ size.addEventListener("click", (event) => {
     target.classList.add("size__button--checked"); // Добавляем тому на который нажали
   }
 });
+
+// -- Выбор отзыва.

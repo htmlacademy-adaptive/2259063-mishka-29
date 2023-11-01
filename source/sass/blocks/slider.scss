@@ -1,12 +1,45 @@
 @use "../global/variables.scss";
 @import "../global/mixin";
 
-.slider {
+.slider-buttons {
   display: flex;
   gap: 31px;
 }
 
-.slider__button {
+.slider__description {
+  padding-bottom: 33px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 17px;
+    white-space: break-spaces;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-left: 175px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 44px;
+  }
+}
+
+.slider__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__author {
+  @include reset;
+  padding-bottom: 30px;
+}
+
+.slider-buttons__button {
   @include reset;
   background-color: transparent;
   flex-basis: 50%;

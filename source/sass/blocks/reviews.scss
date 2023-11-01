@@ -81,11 +81,6 @@
   }
 }
 
-.reviews__author {
-  @include reset;
-  padding-bottom: 30px;
-}
-
 .reviews__title {
   padding-bottom: 14px;
 
@@ -107,26 +102,6 @@
   }
 }
 
-.reviews__description {
-  padding-bottom: 33px;
-  color: #444444;
-  font-size: 15px;
-  line-height: 30px;
-
-  @media (min-width: variables.$screen-tablet) {
-    font-size: 17px;
-    white-space: break-spaces;
-    padding-bottom: 61px;
-  }
-
-  @media (min-width: variables.$screen-desktop) {
-    padding-left: 175px;
-    position: relative;
-    z-index: 1;
-    padding-bottom: 44px;
-  }
-}
-
 .reviews__container {
   @media (min-width: variables.$screen-tablet) {
     display: flex;
@@ -140,15 +115,18 @@
   }
 }
 
-.reviews__slider {
+.reviews__buttons {
   padding-bottom: 38px;
 
   @media (min-width: variables.$screen-tablet) {
-    flex-basis: 137px;
+    position: absolute;
+    width: 137px;
+    right: 50px;
+    bottom: 110px;
   }
 }
 
-.reviews__button {
+.reviews__link {
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     right: 50px;
