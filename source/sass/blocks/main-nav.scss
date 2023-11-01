@@ -126,6 +126,22 @@
     background-color: inherit;
     color: #000000;
     width: 86.98vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: inherit;
+    color: #000000;
+    width: 86.98vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -221,7 +237,7 @@
     &--search {
       order: 1;
       padding: 36px 33px 34px;
-      flex-basis: 82px;
+      // flex-basis: 82px;
       min-height: 88px;
       border-left: 1px solid #ececec;
       border-right: 1px solid #ececec;
@@ -234,7 +250,7 @@
 
     &--cart {
       order: 2;
-      flex-basis: 264px;
+      // flex-basis: 264px;
       padding: 32.5px 0 31.5px 53px;
 
       &::before {
@@ -244,8 +260,9 @@
     }
 
     &--secondary {
-      flex-basis: 167px;
+      flex-basis: 150px;
       padding: 20.5px 0;
+      flex-shrink: 0;
     }
   }
 
@@ -262,6 +279,14 @@
       display: block;
       font-size: 15px;
       line-height: 24px;
+    }
+
+    &--secondary {
+      flex-basis: 167px;
+    }
+
+    &--hero {
+      flex-basis: fit-content;
     }
   }
 }
@@ -298,10 +323,12 @@
     order: 3;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    top: 88.5px;
   }
 
   @media (min-width: variables.$screen-desktop) {
     bottom: -60px;
+    width: fit-content;
+    right: 0;
   }
 }

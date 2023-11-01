@@ -94,6 +94,7 @@
     line-height: 50px;
     padding-top: 82.5px;
     padding-bottom: 38.5px;
+    padding-right: 180px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -102,6 +103,7 @@
     z-index: 1;
     font-size: 53px;
     line-height: 57px;
+    padding-right: 190px;
   }
 }
 
@@ -155,5 +157,6 @@
     font-size: 17px;
     line-height: 20px;
     min-width: 175px;
+    z-index: 1;
   }
 }

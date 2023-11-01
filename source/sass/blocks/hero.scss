@@ -17,9 +17,9 @@
       width: 100%;
       height: 32px;
       background-image: url("../img/zigzag_line_hero.svg");
-      background-repeat: no-repeat;
+      background-repeat: repeat-x;
       background-position: bottom;
-      background-size: cover;
+      // background-size: cover;
       z-index: 0;
       position: absolute;
       bottom: -6px;
