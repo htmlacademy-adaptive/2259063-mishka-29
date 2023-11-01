@@ -10,6 +10,14 @@
   position: relative;
   z-index: 0;
 
+  &--form {
+    background-image: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: none;
+    }
+  }
+
   @media (min-width: variables.$screen-tablet) {
     &::after {
       content: "";
