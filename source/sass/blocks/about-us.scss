@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.about-us__wrapper {
+  padding-top: 31px;
+  max-width: 1150px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 55.5px;
+  }
+}
+
+.about-us__list {
+  padding: 28px 0 58px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 41.5px;
+    padding-bottom: 83px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 68px 247px 89px 175px;
+  }
+}
+
+.about-us__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -1,0 +1,43 @@
+@use "../global/variables.scss";
+
+.size {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: clamp(260px, 46.6vw, 350px);
+  margin: 0 auto;
+  padding-bottom: 31px;
+}
+
+.size__button {
+  color: #444444;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 18px;
+  flex-basis: clamp(82px, 14.6vw, 112px);
+  background-color: inherit;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+
+  &:hover {
+    transition: 0.2s;
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &--checked {
+    border-color: #63d1bb;
+
+    &:hover {
+      transition: 0.2s;
+      border-color: #63d1bb;
+    }
+  }
+
+  &:active {
+    transition: 0.2s;
+    border-color: #62d1ba;
+  }
+}

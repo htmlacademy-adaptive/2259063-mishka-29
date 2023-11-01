@@ -1,0 +1,17 @@
+@use "../global/variables.scss";
+
+.nav-link__description {
+  @media (min-width: variables.$screen-tablet) {
+    &--search {
+      display: none;
+    }
+
+    &--cart {
+      display: block;
+      min-width: 211px;
+      text-align: end;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}

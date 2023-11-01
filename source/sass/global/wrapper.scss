@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  text-align: start;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,56 @@
+@use "../global/variables.scss";
+
+.main-footer {
+  background-color: #f1f1f1;
+}
+
+.main-footer__wrapper {
+  padding-bottom: 38px;
+  max-width: 1150px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+}
+
+.main-footer__link {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-footer__list {
+  padding: 28px 0;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: variables.$screen-tablet) {
+    border-bottom: none;
+    padding: 0;
+  }
+}
+
+.main-footer__copyright-link {
+  padding-top: 29px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+  }
+}
+
+.main-footer__logo {
+  &:hover {
+    path {
+      transition: 0.2s;
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    path {
+      transition: 0.1s;
+      fill-opacity: 0.3;
+    }
+  }
+}

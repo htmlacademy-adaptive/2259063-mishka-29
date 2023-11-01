@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.hero-link {
+  display: flex;
+  cursor: pointer;
+}
+
+.hero-link__title {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  &--interior {
+    &::after {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#interior");
+      width: 60px;
+      height: 62px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &--toys {
+    &::after {
+      content: "";
+      background-image: url("../img/stack/sprite.svg#toys");
+      width: 60px;
+      height: 60px;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.5;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

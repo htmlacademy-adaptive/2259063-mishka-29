@@ -1,0 +1,44 @@
+@use "../global/variables.scss";
+
+.contacts-mail {
+  display: flex;
+  color: #444444;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: start;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 17px;
+  }
+}
+
+.contacts-mail__title {
+  flex-basis: 76px;
+  flex-shrink: 0;
+}
+
+.contacts-mail__link {
+  display: block;
+  position: relative;
+
+  @media (min-width: variables.$screen-tablet) {
+    max-width: 230px;
+  }
+
+  &:hover {
+    transition: 0.2s;
+    color: #62d1ba;
+
+    &::after {
+      transition: 0.2s;
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    &::after {
+      transition: 0.2s;
+      opacity: 0.1;
+    }
+  }
+}
