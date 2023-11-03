@@ -1,0 +1,43 @@
+@use "../global/variables.scss";
+
+.color__title {
+  padding-bottom: 25px;
+}
+
+.color__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.color__description {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #444444;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    width: 23.2px;
+    height: 16px;
+    background-image: url("/img/stack/sprite.svg#checkbox");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 7.7px;
+  }
+}
+
+.color__input:checked + .color__description::after {
+  display: block;
+}

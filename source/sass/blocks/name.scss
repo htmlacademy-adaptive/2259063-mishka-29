@@ -1,0 +1,11 @@
+@use "../global/variables.scss";
+
+.name__title {
+  padding-bottom: 25px;
+}
+
+.name__label {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}

@@ -22,7 +22,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <div class="main-nav__container">
-            <a class="main-nav__logo main-logo" href="#">
+            <a class="main-nav__logo main-logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo_header/logo_header_desktop.svg" width="149"
                   height="72">
@@ -42,8 +42,8 @@
               <div class="list-secondary__header">
                 <a class="main-nav__link main-nav__link--catalog main-nav__link--secondary link"
                   href="catalog.html">Каталог товаров</a>
-                <a class="main-nav__link main-nav__link--order main-nav__link--secondary link"
-                  href="form.html">Вязание на заказ</a>
+                <a class="main-nav__link main-nav__link--order main-nav__link--secondary link" href="form.html">Вязание
+                  на заказ</a>
               </div>
               <div class="list-secondary__hero">
                 <a class="main-nav__link main-nav__link--new main-nav__link--secondary main-nav__link--hero link"
@@ -52,12 +52,12 @@
                   href="catalog.html">Распродажа</a>
               </div>
             </div>
-            <menu class="nav-list__primary title">
+            <div class="nav-list__primary title">
               <a class="main-nav__link link main-nav__link--search nav-link " href="#"> <span
                   class="nav-link__description nav-link__description--search">Поиск по сайту</span></a>
               <a class="main-nav__link link main-nav__link--cart nav-link " href="#"><span
                   class="nav-link__description nav-link__description--cart">Корзина: пока пуста</span></a>
-            </menu>
+            </div>
             <p class="main-nav__free-delivery title">Бесплатная доставка по России</p>
           </div>
         </div>
@@ -66,8 +66,98 @@
     <!-- Контент -->
     <main class="main-container">
       <h1 class="visually-hidden">Мишка - Вязание на заказ.</h1>
-      <section class="hero hero--form">
-        <h2 class="hero__title hero-title title">Вязание на заказ</h2>
+      <section class="hero">
+        <div class="hero__container hero__container--form">
+          <h2 class="hero__title hero__title--form hero-title title">Вязание на заказ</h2>
+          <p class="hero__description description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
+            форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+      </section>
+      <section class="knitting">
+        <h2 class="visually-hidden">Форма для заполнения</h2>
+        <form class="knitting__form form" action="https://echo.htmlacademy.ru/" method="get">
+          <!-- radio -->
+          <fieldset class="form__type type fieldset fieldset--type">
+            <legend class="type__title legend legend--type title">тип</legend>
+            <div class="fieldset__container fieldset__container--type wrapper">
+              <ul class="type__list type-list list">
+                <li class="type-list__item">
+                  <label class="type-list__label" for="interior">
+                    <input class="type-list__input input visually-hidden" type="radio" value="Аксессуар для интерьера"
+                      id="interior" name="type" checked>
+                    <span class="type-list__description">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="type-list__item">
+                  <label class="type-list__label" for="toy">
+                    <input class="type-list__input input visually-hidden" type="radio" value="Детская игрушка" id="toy"
+                      name="type" checked>
+                    <span class="type-list__description">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <!-- checkbox -->
+          <fieldset class="form__color color fieldset fieldset--color">
+            <legend class="color__title legend legend--color title">цвет</legend>
+            <div class="fieldset__container fieldset__container--color wrapper">
+              <label class="color__label" for="white">
+                <input class="color__input input visually-hidden" type="checkbox" id="white" value="white"
+                  name="color" checked>
+                <span class="color__description">Белый</span>
+              </label>
+              <label class="color__label" for="grey">
+                <input class="color__input input visually-hidden" type="checkbox" id="grey" value="grey"
+                  name="color" checked>
+                <span class="color__description">Серый</span>
+              </label>
+              <label class="color__label" for="tiffany">
+                <input class="color__input input visually-hidden" type="checkbox" id="tiffany" value="tiffany"
+                  name="color">
+                <span class="color__description">Тиффани</span>
+              </label>
+              <label class="color__label" for="black">
+                <input class="color__input input visually-hidden" type="checkbox" id="black" value="black"
+                  name="color">
+                <span class="color__description">Чёрный</span>
+              </label>
+              <label class="color__label" for="pink">
+                <input class="color__input input visually-hidden" type="checkbox" id="pink" value="pink"
+                  name="color">
+                <span class="color__description">Розовый</span>
+              </label>
+              <label class="color__label" for="orange">
+                <input class="color__input input visually-hidden" type="checkbox" id="orange" value="orange"
+                  name="color">
+                <span class="color__description">Оранжевый</span>
+              </label>
+            </div>
+          </fieldset>
+          <!-- name surname -->
+          <fieldset class="form__name name fieldset">
+            <legend class="name__title legend legend--name title">фио</legend>
+            <div class="fieldset__container fieldset__container--name wrapper">
+              <label class="name__label label" for="name">
+                <span class="name__description">Имя:</span>
+                <input class="name__input input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
+                  required>
+              </label>
+              <label class="name__label label" for="surname_first">
+                <span class="name__description">Фамилия:</span>
+                <input class="name__input input" type="text" name="surname_first" id="surname_first"
+                  placeholder="Укажите фамилию*" required>
+              </label>
+              <label class="name__label label" for="surname_second">
+                <span class="name__description">Отчество:</span>
+                <input class="name__input input" type="text" name="surname_second" id="surname_second"
+                  placeholder="Отчество, если желаете">
+              </label>
+            </div>
+          </fieldset>
+        </form>
+
+      </section>
     </main>
     <!-- Подвал -->
     <footer class="main-footer">
