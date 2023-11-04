@@ -69,9 +69,9 @@
       <section class="hero">
         <div class="hero__container hero__container--form">
           <h2 class="hero__title hero__title--form hero-title title">Вязание на заказ</h2>
+        </div>
           <p class="hero__description description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
             форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        </div>
       </section>
       <section class="knitting">
         <h2 class="visually-hidden">Форма для заполнения</h2>
@@ -85,14 +85,14 @@
                   <label class="type-list__label" for="interior">
                     <input class="type-list__input input visually-hidden" type="radio" value="Аксессуар для интерьера"
                       id="interior" name="type" checked>
-                    <span class="type-list__description">Аксессуар для интерьера</span>
+                    <span class="type-list__description"><span class="type-list__text type-list__text--interior">Аксессуар для интерьера</span></span>
                   </label>
                 </li>
                 <li class="type-list__item">
                   <label class="type-list__label" for="toy">
                     <input class="type-list__input input visually-hidden" type="radio" value="Детская игрушка" id="toy"
-                      name="type" checked>
-                    <span class="type-list__description">Детская игрушка</span>
+                      name="type">
+                    <span class="type-list__description"><span class="type-list__text">Детская игрушка</span></span>
                   </label>
                 </li>
               </ul>
@@ -103,34 +103,32 @@
             <legend class="color__title legend legend--color title">цвет</legend>
             <div class="fieldset__container fieldset__container--color wrapper">
               <label class="color__label" for="white">
-                <input class="color__input input visually-hidden" type="checkbox" id="white" value="white"
-                  name="color" checked>
-                <span class="color__description">Белый</span>
+                <input class="color__input input visually-hidden" type="checkbox" id="white" value="white" name="color"
+                  checked>
+                <span class="color__description"><span class="color__text">Белый</span></span>
               </label>
               <label class="color__label" for="grey">
-                <input class="color__input input visually-hidden" type="checkbox" id="grey" value="grey"
-                  name="color" checked>
-                <span class="color__description">Серый</span>
+                <input class="color__input input visually-hidden" type="checkbox" id="grey" value="grey" name="color"
+                  checked>
+                <span class="color__description"><span class="color__text">Серый</span></span>
               </label>
               <label class="color__label" for="tiffany">
                 <input class="color__input input visually-hidden" type="checkbox" id="tiffany" value="tiffany"
                   name="color">
-                <span class="color__description">Тиффани</span>
+                <span class="color__description"><span class="color__text">Тиффани</span></span>
               </label>
               <label class="color__label" for="black">
-                <input class="color__input input visually-hidden" type="checkbox" id="black" value="black"
-                  name="color">
-                <span class="color__description">Чёрный</span>
+                <input class="color__input input visually-hidden" type="checkbox" id="black" value="black" name="color">
+                <span class="color__description"><span class="color__text">Чёрный</span></span>
               </label>
               <label class="color__label" for="pink">
-                <input class="color__input input visually-hidden" type="checkbox" id="pink" value="pink"
-                  name="color">
-                <span class="color__description">Розовый</span>
+                <input class="color__input input visually-hidden" type="checkbox" id="pink" value="pink" name="color">
+                <span class="color__description"><span class="color__text">Розовый</span></span>
               </label>
               <label class="color__label" for="orange">
                 <input class="color__input input visually-hidden" type="checkbox" id="orange" value="orange"
                   name="color">
-                <span class="color__description">Оранжевый</span>
+                <span class="color__description"><span class="color__text">Оранжевый</span></span>
               </label>
             </div>
           </fieldset>
@@ -155,8 +153,41 @@
               </label>
             </div>
           </fieldset>
+          <!-- tel mail -->
+          <fieldset class="form__phone phone fieldset">
+            <legend class="phone__title legend title">тел</legend>
+            <div class="fieldset__container fieldset__container--phone wrapper">
+              <label class="phone__label label" for="phone">
+                <input class="phone__input input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
+                  name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__email email fieldset">
+            <legend class="email__title legend title">E-mail</legend>
+            <div class="fieldset__container fieldset__container--email wrapper">
+              <label class="email__label label" for="email">
+                <input class="email__input input" type="email" name="email" id="email" placeholder="Ваш Email*"
+                  required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__add add fieldset">
+            <legend class="add__title legend title">Доп</legend>
+            <div class="fieldset__container fieldset__container--add wrapper">
+              <label class="add__label label" for="add">
+                <span class="visually-hidden">Напишите свои пожелания</span>
+                <textarea class="add__input" rows="7" id="add" name="add"
+                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <div class="form__button form-button wrapper">
+            <small class="form-button__asterisk">*Поля обязательны для заполнения</small>
+            <button class="form-button__button transparent-button" type="submit"><span
+                class="form-button__description">отправить заказ</span></button>
+          </div>
         </form>
-
       </section>
     </main>
     <!-- Подвал -->

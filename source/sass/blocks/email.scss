@@ -1,0 +1,87 @@
+@use "../global/variables.scss";
+
+.email__title {
+  padding-bottom: 4.5px;
+}
+
+.email__label {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 21px;
+    mask-image: url("../img/stack/sprite.svg#mail");
+    mask-position: center;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 7px;
+    top: 0;
+  }
+}
+
+.email__input {
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid #000000;
+  padding: 15.8px 10.5px 17px 0;
+  width: 100%;
+  color: #444444;
+  font-family: variables.$font-ptsans;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  &:hover,
+  :active {
+    transition: border-color 0.2s;
+    border-color: #62d1ba;
+  }
+
+  &:disabled {
+    border-color: #000000;
+  }
+}
+
+.email__input::placeholder {
+  color: #000000;
+  font-family: variables.$font-ptsans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+
+.email__label:hover,
+.email__label:active {
+  &::after {
+    transition: background-color 0.2s;
+    background-color: #62d1ba;
+  }
+}
+
+.email__label:has(.email__input:not(:placeholder-shown)) {
+  transition: border-color 0.2s;
+  border-color: #62d1ba;
+
+  &::after {
+    transition: background-color 0.2s;
+    background-color: #62d1ba;
+  }
+}
+
+.email__label:has(.email__input:disabled) {
+  opacity: 0.2;
+}
+
+.email__label:hover:has(.email__input:disabled) {
+  &::after {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

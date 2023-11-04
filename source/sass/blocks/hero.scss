@@ -65,6 +65,9 @@
     z-index: 0;
 
     @media (min-width: variables.$screen-tablet) {
+      margin-bottom: 54px;
+      min-height: 226px;
+
       &::after {
         content: "";
         display: block;
@@ -114,6 +117,12 @@
 
   &--form {
     padding: 73.5px 0;
+
+    @media (min-width: variables.$screen-tablet) {
+      position: relative;
+      padding-top: 101px;
+      padding-bottom: 63px;
+    }
   }
 }
 
@@ -123,4 +132,9 @@
   font-size: 13px;
   line-height: 24px;
   padding: 17px 30px 29px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

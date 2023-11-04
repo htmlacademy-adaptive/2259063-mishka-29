@@ -3,20 +3,19 @@
 .type-list {
   display: flex;
   flex-direction: column;
-  gap: 11px;
+  gap: 19px;
 }
 
 .type-list__label {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
-
 }
 
 .type-list__description {
   display: flex;
   gap: 11px;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 
   &::before {
@@ -38,11 +37,50 @@
     flex-shrink: 0;
     position: absolute;
     left: 12px;
+    top: 12px;
     display: none;
   }
 }
 
+.type-list__text {
+  padding-top: 10px;
+
+  &--interior {
+    padding-top: 5px;
+  }
+}
 
 .type-list__input:checked + .type-list__description::after {
   display: block;
+}
+
+.type-list__label:hover {
+  .type-list__description::before {
+    transition: border-color 0.2s;
+    border-color: #62d1ba;
+  }
+}
+
+.type-list__label:active {
+  .type-list__description::before {
+    transition: border-color 0.2s;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.type-list__input:focus + .type-list__description::before {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+  transition: border-color 0.2s;
+  border-color: #62d1ba;
+}
+
+.type-list__label:has(.type-list__input:disabled) {
+  opacity: 0.5;
+}
+
+.type-list__label:hover:has(.type-list__input:disabled) {
+  .type-list__description::before {
+    border-color: #444444;
+  }
 }

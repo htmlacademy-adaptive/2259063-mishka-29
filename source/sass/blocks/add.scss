@@ -1,26 +1,16 @@
 @use "../global/variables.scss";
 
-.name__title {
-  padding-bottom: 25px;
+.add__title {
+  padding-bottom: 22.5px;
 }
 
-.name__label {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-}
-
-.name__description {
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.name__input {
+.add__input {
   border: none;
   background-color: inherit;
-  border-bottom: 2px solid #000000;
-  padding: 17px 9.5px 17px 0;
+  border: 2px solid #000000;
+  padding: 17px;
+  width: 100%;
+  resize: none;
   color: #444444;
   font-family: variables.$font-ptsans;
   font-size: 19px;
@@ -28,13 +18,14 @@
   font-weight: 400;
   line-height: 18px;
 
-  &:not(:placeholder-shown) {
+  &:hover,
+  &:active {
     transition: border-color 0.2s;
     border-color: #62d1ba;
   }
 }
 
-.name__input::placeholder {
+.add__input::placeholder {
   color: #000000;
   font-family: variables.$font-ptsans;
   font-size: 17px;
@@ -44,8 +35,14 @@
   opacity: 0.3;
 }
 
-.name__input:hover,
-.name__input:active {
+.add__input:disabled {
+  opacity: 0.2;
+  &:hover {
+    border-color: #000000;
+  }
+}
+
+.add__input:not(:placeholder-shown) {
   transition: border-color 0.2s;
   border-color: #62d1ba;
 }
