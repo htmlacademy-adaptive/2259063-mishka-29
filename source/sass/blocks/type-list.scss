@@ -10,6 +10,11 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .type-list__description {
@@ -40,6 +45,22 @@
     top: 12px;
     display: none;
   }
+
+  @media (min-width: variables.$screen-tablet) {
+    gap: 26px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      width: 22.7px;
+      height: 22.7px;
+      left: 15px;
+      top: 14px;
+    }
+  }
 }
 
 .type-list__text {
@@ -47,6 +68,10 @@
 
   &--interior {
     padding-top: 5px;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 15px;
   }
 }
 

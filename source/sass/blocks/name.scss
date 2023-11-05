@@ -2,12 +2,24 @@
 
 .name__title {
   padding-bottom: 25px;
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    max-width: 255px;
+    word-break: break-all;
+    white-space: inherit;
+  }
 }
 
 .name__label {
   display: flex;
   flex-direction: column;
   gap: 17px;
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .name__description {
@@ -32,6 +44,11 @@
     transition: border-color 0.2s;
     border-color: #62d1ba;
   }
+
+  @media (min-width: variables.$screen-tablet) {
+    flex-grow: 1;
+    padding-left: 18px;
+  }
 }
 
 .name__input::placeholder {
@@ -42,6 +59,10 @@
   font-weight: 400;
   line-height: 18px;
   opacity: 0.3;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 19px;
+  }
 }
 
 .name__input:hover,

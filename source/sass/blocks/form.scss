@@ -1,27 +1,53 @@
 @use "../global/variables.scss";
 
 .form__type {
-    padding-bottom: 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 50px;
+  }
 }
 
 .form__color {
   padding-bottom: 25px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 50px;
+  }
 }
 
 .form__name {
   padding-bottom: 34.5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 66px;
+    padding-bottom: 50px;
+  }
 }
 
 .form__phone {
   padding-bottom: 34.5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 50px;
+  }
 }
 
 .form__email {
   padding-bottom: 34.5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 24px;
+  }
 }
 
 .form__add {
   padding-bottom: 17px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
 }
 
 .form__button {

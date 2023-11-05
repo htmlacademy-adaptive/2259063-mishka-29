@@ -1,7 +1,18 @@
 @use "../global/variables.scss";
 
 .type__title {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    max-width: 255px;
+    word-break: break-all;
+    white-space: inherit;
+  }
 }
 
-
+.type__list {
+  @media (min-width: variables.$screen-tablet) {
+    padding-left: 169px;
+  }
+}

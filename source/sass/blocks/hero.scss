@@ -1,5 +1,11 @@
 @use "../global/variables.scss";
 
+.hero {
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 63px;
+  }
+}
+
 .hero__container {
   &--index {
     background-image: url("../img/hero/hero_mobile.webp");

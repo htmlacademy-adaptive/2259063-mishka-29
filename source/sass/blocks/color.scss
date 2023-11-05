@@ -1,13 +1,32 @@
 @use "../global/variables.scss";
 
+.color {
+  @media (min-width: variables.$screen-tablet) {
+    background-color: #f1f1f1;
+    padding-top: 50px;
+  }
+}
+
 .color__title {
   padding-bottom: 25px;
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    max-width: 255px;
+    word-break: break-all;
+    white-space: inherit;
+  }
 }
 
 .color__label {
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .color__description {
@@ -39,10 +58,29 @@
     top: 11px;
     flex-shrink: 0;
   }
+
+  @media (min-width: variables.$screen-tablet) {
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      width: 31.8px;
+      height: 22px;
+      left: 9.7px;
+      top: 15px;
+    }
+  }
 }
 
 .color__text {
   padding-top: 8px;
+  word-break: break-all;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 15px;
+  }
 }
 
 .color__input:checked + .color__description::after {

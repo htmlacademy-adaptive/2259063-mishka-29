@@ -20,4 +20,14 @@
     width: 100%;
     background-color: #62d1ba;
   }
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0 50px;
+    padding-top: 18px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
+

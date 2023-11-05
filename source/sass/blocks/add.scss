@@ -2,6 +2,13 @@
 
 .add__title {
   padding-bottom: 22.5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    position: absolute;
+    max-width: 255px;
+    word-break: break-all;
+    white-space: inherit;
+  }
 }
 
 .add__input {
@@ -33,6 +40,10 @@
   font-weight: 400;
   line-height: 18px;
   opacity: 0.3;
+
+  @media (min-width: variables.$screen-tablet) {
+    font-size: 19px;
+  }
 }
 
 .add__input:disabled {
