@@ -47,7 +47,7 @@
   @media (min-width: variables.$screen-tablet) {
     &--primary {
       display: grid;
-      grid-template-columns: 2fr;
+      grid-template-columns: 38vw 1fr;
       grid-template-rows: repeat(3, minmax(90px, auto));
       column-gap: 42px;
     }
@@ -154,13 +154,13 @@
 .week-product__description {
   padding-bottom: 28px;
   color: #444444;
-  font-size: 15px;
+  font-size: clamp(15px, 5vw, 17px);
   line-height: 24px;
 
   &--price {
     color: #444444;
     text-align: center;
-    font-size: 17px;
+    font-size: clamp(17px, 5vw, 20px);
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
@@ -169,12 +169,10 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 0;
-    font-size: 17px;
     line-height: 30px;
     padding-bottom: 10px;
 
     &--price {
-      font-size: 20px;
       padding: 0;
       padding-bottom: 33px;
     }

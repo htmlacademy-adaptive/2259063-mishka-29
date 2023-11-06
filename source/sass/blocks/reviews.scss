@@ -136,5 +136,9 @@
     line-height: 20px;
     min-width: 175px;
     z-index: 1;
+    max-width: 300px;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

@@ -19,10 +19,9 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding-left: 175px;
+    padding: 0 30px 44px 175px;
     position: relative;
     z-index: 1;
-    padding-bottom: 44px;
   }
 }
 

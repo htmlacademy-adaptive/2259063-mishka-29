@@ -85,12 +85,15 @@
     font-size: 17px;
     line-height: 20px;
     margin: 0 auto;
+    max-width: 290px;
+    word-break: break-all;
   }
 
   @media (min-width: variables.$screen-desktop) {
     position: absolute;
     left: 228px;
     bottom: 105px;
+    max-height: 120px;
   }
 }
 
