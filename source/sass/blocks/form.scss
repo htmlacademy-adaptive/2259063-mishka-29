@@ -52,4 +52,10 @@
 
 .form__button {
   padding-bottom: 55px;
+  max-width: 1150px;
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-right: 227px;
+    padding-left: 217px;
+  }
 }

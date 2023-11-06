@@ -8,6 +8,9 @@
 }
 
 .fieldset__container {
+  max-width: 1150px;
+  position: relative;
+
   &--color {
     display: flex;
     flex-direction: column;
@@ -17,6 +20,10 @@
       padding-left: 217px;
       display: grid;
       grid-template-columns: repeat(2, 248px);
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      grid-template-columns: repeat(auto-fit, 248px);
     }
   }
 
@@ -28,11 +35,19 @@
     @media (min-width: variables.$screen-tablet) {
       padding-left: 217px;
     }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 227px;
+    }
   }
 
   &--phone {
     @media (min-width: variables.$screen-tablet) {
       padding-left: 217px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 227px;
     }
   }
 
@@ -40,11 +55,19 @@
     @media (min-width: variables.$screen-tablet) {
       padding-left: 217px;
     }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 227px;
+    }
   }
 
   &--add {
     @media (min-width: variables.$screen-tablet) {
       padding-left: 217px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      padding-right: 227px;
     }
   }
 }

@@ -3,12 +3,13 @@
 .add__title {
   padding-bottom: 22.5px;
 
-  @media (min-width: variables.$screen-tablet) {
-    position: absolute;
-    max-width: 255px;
-    word-break: break-all;
-    white-space: inherit;
-  }
+  // @media (min-width: variables.$screen-tablet) {
+  //   position: absolute;
+  //   max-width: 255px;
+  //   left: 0;
+  //   word-break: break-all;
+  //   white-space: inherit;
+  // }
 }
 
 .add__input {
