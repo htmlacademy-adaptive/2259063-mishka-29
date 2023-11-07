@@ -79,12 +79,12 @@
   margin: 0 9.38vw;
 
   @media (min-width: variables.$screen-tablet) {
-    width: fit-content;
     padding-left: 39.5px;
     padding-right: 39.5px;
+    margin: 0 auto;
     font-size: 17px;
     line-height: 20px;
-    margin: 0 auto;
+    width: fit-content;
     max-width: 290px;
     word-break: break-all;
   }

@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+
+.catalog-item__link {
+  display: block;
+  padding-bottom: 27.5px;
+}
+
+.catalog-item__title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HTML Academy: Мишка. Вязание на заказ</title>
+  <title>HTML Academy: Мишка. Каталог</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="favicon.ico">
@@ -65,137 +65,54 @@
     </header>
     <!-- Контент -->
     <main class="main-container">
-      <h1 class="visually-hidden">Мишка - Вязание на заказ.</h1>
+      <h1 class="visually-hidden">Мишка - Каталог продукции.</h1>
       <section class="hero">
         <div class="hero__container hero__container--form">
-          <h2 class="hero__title hero__title--form hero-title title">Вязание на заказ</h2>
+          <h2 class="hero__title hero__title--form hero-title title">Каталог товаров</h2>
         </div>
-        <p class="hero__description description wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
-          простую
-          форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
-      <section class="knitting">
-        <h2 class="visually-hidden">Форма для заполнения</h2>
-        <form class="knitting__form form" action="https://echo.htmlacademy.ru/" method="get">
-          <!-- radio -->
-          <fieldset class="form__type type fieldset fieldset--type">
-            <legend class="visually-hidden">тип</legend>
-            <div class="fieldset__container fieldset__container--type wrapper">
-              <h3 class="type__title legend legend--type title">тип</h3>
-              <ul class="type__list type-list list">
-                <li class="type-list__item">
-                  <label class="type-list__label" for="interior">
-                    <input class="type-list__input input visually-hidden" type="radio" value="Аксессуар для интерьера"
-                      id="interior" name="type" checked>
-                    <span class="type-list__description"><span
-                        class="type-list__text type-list__text--interior">Аксессуар для интерьера</span></span>
-                  </label>
-                </li>
-                <li class="type-list__item">
-                  <label class="type-list__label" for="toy">
-                    <input class="type-list__input input visually-hidden" type="radio" value="Детская игрушка" id="toy"
-                      name="type">
-                    <span class="type-list__description"><span class="type-list__text">Детская игрушка</span></span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </fieldset>
-          <!-- checkbox -->
-          <fieldset class="form__color color fieldset fieldset--color">
-            <legend class="visually-hidden">цвет</legend>
-            <div class="fieldset__container fieldset__container--color wrapper">
-              <h3 class="color__title legend legend--color title">цвет</h3>
-              <label class="color__label" for="white">
-                <input class="color__input input visually-hidden" type="checkbox" id="white" value="white" name="color"
-                  checked>
-                <span class="color__description"><span class="color__text">Белый</span></span>
-              </label>
-              <label class="color__label" for="grey">
-                <input class="color__input input visually-hidden" type="checkbox" id="grey" value="grey" name="color"
-                  checked>
-                <span class="color__description"><span class="color__text">Серый</span></span>
-              </label>
-              <label class="color__label" for="tiffany">
-                <input class="color__input input visually-hidden" type="checkbox" id="tiffany" value="tiffany"
-                  name="color">
-                <span class="color__description"><span class="color__text">Тиффани</span></span>
-              </label>
-              <label class="color__label" for="black">
-                <input class="color__input input visually-hidden" type="checkbox" id="black" value="black" name="color">
-                <span class="color__description"><span class="color__text">Чёрный</span></span>
-              </label>
-              <label class="color__label" for="pink">
-                <input class="color__input input visually-hidden" type="checkbox" id="pink" value="pink" name="color">
-                <span class="color__description"><span class="color__text">Розовый</span></span>
-              </label>
-              <label class="color__label" for="orange">
-                <input class="color__input input visually-hidden" type="checkbox" id="orange" value="orange"
-                  name="color">
-                <span class="color__description"><span class="color__text">Оранжевый</span></span>
-              </label>
-            </div>
-          </fieldset>
-          <!-- name surname -->
-          <fieldset class="form__name name fieldset">
-            <legend class="visually-hidden">Фамилия Имя Отчество</legend>
-            <div class="fieldset__container fieldset__container--name wrapper">
-              <h3 class="name__title legend legend--name title">фио</h3>
-              <label class="name__label label" for="name">
-                <span class="name__description">Имя:</span>
-                <input class="name__input input" type="text" name="name" id="name" placeholder="Введите ваше имя*"
-                  required>
-              </label>
-              <label class="name__label label" for="surname_first">
-                <span class="name__description">Фамилия:</span>
-                <input class="name__input input" type="text" name="surname_first" id="surname_first"
-                  placeholder="Укажите фамилию*" required>
-              </label>
-              <label class="name__label label" for="surname_second">
-                <span class="name__description">Отчество:</span>
-                <input class="name__input input" type="text" name="surname_second" id="surname_second"
-                  placeholder="Отчество, если желаете">
-              </label>
-            </div>
-          </fieldset>
-          <!-- tel mail -->
-          <fieldset class="form__phone phone fieldset">
-            <legend class="visually-hidden">телефон</legend>
-            <div class="fieldset__container fieldset__container--phone wrapper">
-              <h3 class="phone__title legend title">тел</h3>
-              <label class="phone__label label" for="phone">
-                <input class="phone__input input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
-                  name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__email email fieldset">
-            <legend class="visually-hidden">E-mail</legend>
-            <div class="fieldset__container fieldset__container--email wrapper">
-              <h3 class="email__title legend title">E-mail</h3>
-              <label class="email__label label" for="email">
-                <input class="email__input input" type="email" name="email" id="email" placeholder="Ваш Email*"
-                  required>
-              </label>
-            </div>
-          </fieldset>
-          <fieldset class="form__add add fieldset">
-            <legend class="visually-hidden">Дополнительно</legend>
-            <div class="fieldset__container fieldset__container--add wrapper">
-              <h3 class="add__title legend title">Доп</h3>
-              <label class="add__label label" for="add">
-                <span class="visually-hidden">Напишите свои пожелания</span>
-                <textarea class="add__input" rows="7" id="add" name="add"
-                  placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </label>
-            </div>
-          </fieldset>
-          <div class="form__button form-button wrapper">
-            <small class="form-button__asterisk">*Поля обязательны для заполнения</small>
-            <button class="form-button__button transparent-button" type="submit"><span
-                class="form-button__description">отправить заказ</span></button>
-          </div>
-        </form>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <div class="catalog__container wrapper">
+          <ul class="catalog__list list">
+            <li class="catalog__item catalog-item">
+              <a class="catalog-item__link link" href="#">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                  srcset="img/catalog/desktop/photo_1_desktop.webp 1x, img/catalog/desktop/photo_1_desktop@2x.webp 2x"
+                  type="image/webp" width="316" height="462">
+                <source media="(min-width:1150px)"
+                  srcset="img/catalog/desktop/photo_1_desktop.jpg, img/catalog/desktop/photo_1_desktop@2x.jpg 2x" type="image/jpg"
+                  width="316" height="462">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/photo_1_tablet.webp 1x, img/catalog/tablet/photo_1_tablet@2x.webp 2x" type="image/webp"
+                  width="334" height="334">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/photo_1_tablet.jpg 1x, img/catalog/tablet/photo_1_tablet@2x.jpg 2x" type="image/jpg"
+                  width="334" height="334">
+                <source media="(min-width:320px)"
+                  srcset="img/catalog/mobile/photo_1_mobile.webp 1x, img/catalog/mobile/photo_1_mobile@2x.webp 2x" type="image/webp"
+                  width="260" height="195">
+                <img class="catalog-item__image" loading="lazy"
+                  src="img/catalog/mobile/photo_1_mobile.jpg" srcset="img/catalog/mobile/photo_1_mobile@2x.jpg 2x" width="260"
+                  height="195" alt="Зайчик-попрыгайчик.">
+                </picture>
+              </a>
+              <div class="catalog-item__container catalog-description">
+                <h3 class="catalog-item__title catalog-title title">
+                  <a class="catalog-title__link link" href="#">Зайчик-попрыгайчик</a>
+                </h3>
+                <p class="catalog-item__description description">Рост 30 см, вес 200 г</p>
+                <div class="catalog-description__container">
+                  <span class="catalog-item__price">1 200 руб.</span>
+                  <button class="catalog-item__button" type="button"></button>
+                </div>
+              </div>
+
+
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Подвал -->
@@ -275,6 +192,19 @@
         </a>
       </div>
     </footer>
+    <!-- Модальные окна -->
+    <div class="page__modal modal-container page__modal--closed"> <!-- для проверки убрать класс page__modal--closed -->
+      <div class="modal-container__modal modal">
+        <p class="modal__title title">Добавить в корзину</p>
+        <p class="modal__description description">Выберите размер:</p>
+        <div class="modal__buttons size">
+          <button type="button" class="size__button size__button--checked">s</button>
+          <button type="button" class="size__button">m</button>
+          <button type="button" class="size__button">l</button>
+        </div>
+        <button type="button" class="modal__button green-button">Добавить</button>
+      </div>
+    </div>
   </div>
 </body>
 

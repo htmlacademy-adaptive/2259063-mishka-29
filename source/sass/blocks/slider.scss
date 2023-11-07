@@ -1,5 +1,5 @@
 @use "../global/variables.scss";
-@import "../global/mixin";
+@use "../global/mixin";
 
 .slider-buttons {
   display: flex;
@@ -34,12 +34,12 @@
 }
 
 .slider__author {
-  @include reset;
+  @include mixin.reset;
   padding-bottom: 30px;
 }
 
 .slider-buttons__button {
-  @include reset;
+  @include mixin.reset;
   background-color: transparent;
   flex-basis: 50%;
   border: 1px solid #ececec;

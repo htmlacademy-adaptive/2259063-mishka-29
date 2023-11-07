@@ -1,5 +1,4 @@
 @use "../global/variables.scss";
-@import "../global/mixin";
 
 .reviews {
   &::after {
@@ -93,12 +92,12 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding-left: 175px;
     position: relative;
     z-index: 1;
     font-size: 53px;
     line-height: 57px;
     padding-right: 190px;
+    padding-left: 175px;
   }
 }
 
@@ -135,10 +134,10 @@
     font-size: 17px;
     line-height: 20px;
     min-width: 175px;
-    z-index: 1;
     max-width: 300px;
     max-height: 80px;
     overflow: hidden;
+    z-index: 1;
     text-overflow: ellipsis;
   }
 }

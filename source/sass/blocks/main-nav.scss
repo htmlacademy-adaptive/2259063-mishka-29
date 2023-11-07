@@ -1,5 +1,5 @@
 @use "../global/variables.scss";
-@import "../global/mixin";
+@use "../global/mixin";
 
 .main-nav {
   min-height: 56px;
@@ -28,7 +28,6 @@
 
 .main-nav__container {
   padding: 22px 30px;
-  width: fit-content;
 
   @media (min-width: variables.$screen-tablet) {
     padding: 22px 0 20px;
@@ -227,7 +226,7 @@
       flex-shrink: 0;
 
       &::before {
-        @include absolute-center;
+        @include mixin.absolute-center;
       }
     }
 
