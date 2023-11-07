@@ -7,7 +7,6 @@
   @media (min-width: variables.$screen-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 310px);
-    grid-template-rows: repeat(auto-fill, minmax(105px, auto));
     grid-template-rows: subgrid;
     column-gap: 1.3vw;
   }

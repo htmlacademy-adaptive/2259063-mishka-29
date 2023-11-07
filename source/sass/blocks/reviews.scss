@@ -16,8 +16,8 @@
   }
 
   position: relative;
-  @media (min-width: variables.$screen-tablet) {
 
+  @media (min-width: variables.$screen-tablet) {
     &::before {
       content: "";
       display: block;
