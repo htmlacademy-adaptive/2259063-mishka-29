@@ -47,7 +47,7 @@
   @media (min-width: variables.$screen-tablet) {
     &--primary {
       display: grid;
-      grid-template-columns: 2fr;
+      grid-template-columns: 38vw 1fr;
       grid-template-rows: repeat(3, minmax(90px, auto));
       column-gap: 42px;
     }
@@ -93,7 +93,7 @@
 
   @media (min-width: variables.$screen-tablet) {
     grid-row: 2 / 3;
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -123,11 +123,11 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-size: 43px;
     line-height: 50px;
 
     &::after {
+      padding-top: 10px;
       text-align: center;
       line-height: 17px;
       flex-basis: 100px;
@@ -154,13 +154,13 @@
 .week-product__description {
   padding-bottom: 28px;
   color: #444444;
-  font-size: 15px;
+  font-size: clamp(15px, 5vw, 17px);
   line-height: 24px;
 
   &--price {
     color: #444444;
     text-align: center;
-    font-size: 17px;
+    font-size: clamp(17px, 5vw, 20px);
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
@@ -168,12 +168,10 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 0;
-    font-size: 17px;
     line-height: 30px;
+    padding-bottom: 10px;
 
     &--price {
-      font-size: 20px;
       padding: 0;
       padding-bottom: 33px;
     }

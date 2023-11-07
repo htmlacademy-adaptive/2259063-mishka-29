@@ -3,8 +3,8 @@ let button = document.querySelector(".main-nav__button");
 let logo = document.querySelector(".main-nav__logo");
 let map = document.querySelector("iframe");
 let modal = document.querySelector(".page__modal");
-let sizeButton = document.querySelectorAll(".size__button");
-let size = document.querySelector(".size");
+// let sizeButton = document.querySelectorAll(".size__button");
+// let size = document.querySelector(".size");
 let orderButton = document.querySelector(".week-product__button");
 // let review = document.querySelectorAll(".slider__item")
 // let sliderButton = document.querySelectorAll(".slider-buttons__button")
@@ -28,15 +28,15 @@ orderButton.onclick = function () {
 };
 
 // -- Выбор размера в модалке.
-size.addEventListener("click", (event) => {
-  let target = event.target; // Отлавливаем элемент в родители на который мы нажали
-  if (target.classList.contains("size__button")) {
-    // Проверяем тот ли это элемент который нам нужен
-    for (let i = 0; i < sizeButton.length; i++) {
-      sizeButton[i].classList.remove("size__button--checked"); // Убираем у других
-    }
-    target.classList.add("size__button--checked"); // Добавляем тому на который нажали
-  }
-});
+// size.addEventListener("click", (event) => {
+//   let target = event.target; // Отлавливаем элемент в родители на который мы нажали
+//   if (target.classList.contains("size__button")) {
+//     // Проверяем тот ли это элемент который нам нужен
+//     for (let i = 0; i < sizeButton.length; i++) {
+//       sizeButton[i].classList.remove("size__button--checked"); // Убираем у других
+//     }
+//     target.classList.add("size__button--checked"); // Добавляем тому на который нажали
+//   }
+// });
 
 // -- Выбор отзыва.

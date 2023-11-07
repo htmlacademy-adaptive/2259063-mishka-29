@@ -1,0 +1,36 @@
+@use "../global/variables.scss";
+
+.form-button {
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form-button__asterisk {
+  display: block;
+  color: #444444;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+    max-width: 320px;
+    text-align: end;
+  }
+}
+
+.form-button__button {
+  width: 100%;
+  background: inherit;
+
+  @media (min-width: variables.$screen-tablet) {
+    width: auto;
+    flex-basis: 230px;
+  }
+}

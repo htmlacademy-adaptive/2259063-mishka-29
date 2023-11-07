@@ -6,13 +6,13 @@
     align-self: flex-end;
     order: 1;
     width: fit-content;
+    max-width: 535px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-   max-width: 400px;
+    max-width: 440px;
   }
 }
-
 
 .nav-list__secondary {
   @media (min-width: variables.$screen-tablet) {

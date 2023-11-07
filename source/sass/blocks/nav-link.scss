@@ -8,10 +8,12 @@
 
     &--cart {
       display: block;
-      min-width: 211px;
-      text-align: end;
+      max-width: 211px;
       font-size: 17px;
       line-height: 24px;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }
