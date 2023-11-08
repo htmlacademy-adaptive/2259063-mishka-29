@@ -23,3 +23,17 @@
   text-align: start;
   padding-bottom: 17.5px;
 }
+
+.catalog-item__button {
+  margin: 0;
+  padding: 0;
+  mask-image: url("../img/stack/sprite.svg#cart");
+  flex-shrink: 0;
+  width: 24px;
+  height: 21px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+  opacity: 0.2;
+  display: block;
+}

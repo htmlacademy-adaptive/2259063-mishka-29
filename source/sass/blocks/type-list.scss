@@ -98,7 +98,7 @@
   }
 }
 
-.type-list__input:focus + .type-list__description::before {
+.type-list__input:focus-visible + .type-list__description::before {
   outline: 2px solid #000000;
   outline-offset: 3px;
   transition: border-color 0.2s;

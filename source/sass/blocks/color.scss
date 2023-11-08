@@ -87,18 +87,21 @@
   }
 }
 
-.color__label:active {
-  .color__description::before {
-    transition: border-color 0.2s;
-    border-color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.color__input:focus + .color__description::before {
+.color__input:focus-visible + .color__description::before {
   outline: 2px solid #000000;
   outline-offset: 3px;
   transition: border-color 0.2s;
   border-color: #62d1ba;
+}
+
+
+
+.color__label:active {
+  .color__description::before {
+    transition: border-color 0.2s;
+    border-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
 }
 
 .color__label:has(.color__input:disabled) {
