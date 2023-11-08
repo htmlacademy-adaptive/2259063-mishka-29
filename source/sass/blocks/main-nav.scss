@@ -8,6 +8,7 @@
   line-height: 24px;
   position: relative;
   z-index: 2;
+  border-bottom: 1px solid #ececec;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 14px;
@@ -22,7 +23,6 @@
 
   @media (min-width: variables.$screen-tablet) {
     padding: 0 50px;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -38,6 +38,7 @@
   @media (min-width: variables.$screen-desktop) {
     margin: 0 auto;
     padding: 9px 0 7px;
+    width: fit-content;
   }
 }
 
@@ -259,6 +260,10 @@
       padding: 32.5px 0 31.5px;
     }
 
+    &--catalog {
+      border-right: 1px solid #ececec;
+    }
+
     &--sale,
     &--new {
       display: block;
@@ -272,10 +277,6 @@
 
     &--hero {
       flex-basis: fit-content;
-    }
-
-    &--secondary:first-child {
-      border-right: 1px solid #ececec;
     }
   }
 

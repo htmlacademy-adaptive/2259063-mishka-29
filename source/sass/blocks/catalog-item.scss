@@ -1,5 +1,9 @@
 @use "../global/variables.scss";
 
+.catalog-item__container {
+  padding: 0 30px;
+}
+
 .catalog-item__link {
   display: block;
   padding-bottom: 27.5px;
@@ -9,4 +13,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  text-align: center;
+}
+
+.catalog-item__description {
+  color: #444444;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: start;
+  padding-bottom: 17.5px;
 }
