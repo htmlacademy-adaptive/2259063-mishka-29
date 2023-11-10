@@ -109,7 +109,8 @@
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">1 200 руб.</span>
-                    <button class="catalog-item__button" type="button"><span class="cart-button__icon"></span></button>
+                    <button class="catalog-item__button cart-button" type="button" aria-label="Добавить в корзину"><span
+                        class="cart-button__icon"></span></button>
                   </div>
                 </div>
               </div>
@@ -148,7 +149,8 @@
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">690 руб.</span>
-                    <button class="catalog-item__button" type="button"><span class="cart-button__icon"></span></button>
+                    <button class="catalog-item__button cart-button" type="button"><span class="cart-button__icon"
+                        aria-label="Добавить в корзину"></span></button>
                   </div>
                 </div>
               </div>
@@ -187,7 +189,7 @@
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">1 500 руб.</span>
-                    <button class="catalog-item__button cart-button" type="button"><span
+                    <button class="catalog-item__button cart-button" type="button" aria-label="Добавить в корзину"><span
                         class="cart-button__icon"></span></button>
                   </div>
                 </div>
@@ -200,7 +202,6 @@
       <section class="production">
         <div class="production__wrapper wrapper">
           <h2 class="production__title title">Процесс производства</h2>
-          <!-- <div class="production__container"> -->
           <div class="production__container production__container--video video">
             <picture class="video__picture">
               <source media="(min-width: 1150px)"
@@ -234,7 +235,6 @@
             <button class="production__button transparent-button"><span class="transparent-button__description">сделать
                 заказ</span></button>
           </div>
-
         </div>
   </div>
   </section>
@@ -268,7 +268,6 @@
             fill="black" />
         </svg>
       </a>
-
       <ul class="main-footer__list social-list list">
         <li class="social-list__item">
           <a class="social-list__link link social-list__link--vk" href="https://vk.com/htmlacademy">
@@ -322,9 +321,9 @@
       <p class="modal__title title">Добавить в корзину</p>
       <p class="modal__description description">Выберите размер:</p>
       <div class="modal__buttons size">
-        <button type="button" class="size__button size__button--checked">s</button>
-        <button type="button" class="size__button">m</button>
-        <button type="button" class="size__button">l</button>
+        <button type="button" class="size__button size__button--checked" aria-label="размер S">s</button>
+        <button type="button" class="size__button" aria-label="размер M">m</button>
+        <button type="button" class="size__button" aria-label="размер L">l</button>
       </div>
       <button type="button" class="modal__button green-button">Добавить</button>
     </div>
