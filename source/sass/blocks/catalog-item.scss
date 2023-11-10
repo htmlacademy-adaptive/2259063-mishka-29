@@ -1,12 +1,24 @@
 @use "../global/variables.scss";
 
 .catalog-item__container {
-  padding: 0 30px;
-  padding-bottom: 26.5px;
+  padding: 0 30px 26.5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 27px 33px 25.5px;
+    border: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .catalog-item__wrapper {
   border-bottom: 1px solid #ececec;
+
+  @media (min-width: variables.$screen-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @media (hover: hover) and (pointer: fine) {
     &:hover .catalog-description {
@@ -34,6 +46,10 @@
   text-align: start;
   padding-top: 27.5px;
   padding-bottom: 10px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 0;
+  }
 }
 
 .catalog-item__description {

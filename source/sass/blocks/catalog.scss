@@ -2,8 +2,24 @@
 
 .catalog__wrapper {
   padding-bottom: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 53px;
+  }
+}
+
+.catalog__list {
+  @media (min-width: variables.$screen-tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+  }
 }
 
 .catalog__item {
   padding-top: 30px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding-top: 0;
+  }
 }
