@@ -15,7 +15,21 @@
 }
 
 .production__video {
- order: 2;
+  order: 2;
+
+  &:hover .video__button {
+    transition: width 0.15s;
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active .video__button {
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
+    transition: width 0.15s;
+    transition: opacity 0.15s;
+  }
 }
 
 .production__title {

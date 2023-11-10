@@ -2,11 +2,29 @@
 
 .catalog-item__container {
   padding: 0 30px;
+  padding-bottom: 26.5px;
+}
+
+.catalog-item__wrapper {
+  border-bottom: 1px solid #ececec;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover .catalog-description {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active .catalog-description {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:has(.catalog-item__button:active) .catalog-description {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog-item__link {
   display: block;
-  padding-bottom: 27.5px;
 }
 
 .catalog-item__title {
@@ -14,6 +32,7 @@
   font-weight: 700;
   line-height: 24px;
   text-align: start;
+  padding-top: 27.5px;
   padding-bottom: 10px;
 }
 
@@ -30,7 +49,6 @@
   font-weight: 700;
 }
 
-
 .catalog-item__image {
   width: 100%;
   height: 100%;
@@ -39,14 +57,23 @@
 
 .catalog-item__button {
   margin: 0;
-  padding: 0;
-  mask-image: url("../img/stack/sprite.svg#cart");
-  flex-shrink: 0;
-  width: 24px;
-  height: 21px;
-  mask-position: center;
-  mask-repeat: no-repeat;
-  background-color: #000000;
-  opacity: 0.2;
+  padding: 5px;
   display: block;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  cursor: pointer;
+
+  &:hover .cart-button__icon {
+    transition: 0.2s;
+    background-color: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    transition: 0.2s;
+    opacity: 0.3;
+  }
 }

@@ -1,0 +1,12 @@
+@use "../global/variables.scss";
+
+.cart-button__icon {
+  display: block;
+  mask-image: url("../img/stack/sprite.svg#cart");
+  width: 24px;
+  height: 21px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+  opacity: 0.2;
+}
