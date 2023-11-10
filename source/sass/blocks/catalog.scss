@@ -1,11 +1,11 @@
 @use "../global/variables.scss";
 
-.catalog__container {
-  padding-top: 30px;
+.catalog__wrapper {
   padding-bottom: 30px;
 }
 
-.catalog__list {
+.catalog__item {
+  padding-top: 30px;
   padding-bottom: 26.5px;
   border-bottom: 1px solid #ececec;
 }

@@ -1,0 +1,48 @@
+@use "../global/variables.scss";
+@use "../global/mixin";
+
+.production__wrapper {
+  padding-bottom: 58px;
+}
+
+.production__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 33px;
+}
+
+.production__video {
+ order: 2;
+}
+
+.production__title {
+  font-size: clamp(17px, 5vw, 20px);
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 13px 26.5px 34px;
+  gap: 25px;
+  order: 1;
+
+  &::before {
+    @include mixin.pseudo("../img/stack/sprite.svg#video_camera", 32px, 22px);
+  }
+}
+
+.production__description {
+  order: 3;
+  color: #444444;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 35px 0 41px 34px;
+}
+
+.production__button {
+  order: 4;
+  width: 60vw;
+}
