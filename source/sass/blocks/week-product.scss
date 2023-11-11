@@ -24,6 +24,8 @@
   @media (min-width: variables.$screen-desktop) {
     &::after {
       height: 23px;
+      width: 1050px;
+      margin: 0 auto;
     }
   }
 }

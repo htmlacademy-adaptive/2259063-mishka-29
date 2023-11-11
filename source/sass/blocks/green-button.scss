@@ -1,8 +1,8 @@
 @use "../global/variables.scss";
-@import "../global/mixin.scss";
+@use "../global/mixin.scss";
 
 .green-button {
-  @include reset;
+  @include mixin.reset;
   width: clamp(260px, 45.6vw, 350px);
   background-color: #63d1bb;
   padding: 18px;

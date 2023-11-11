@@ -3,6 +3,10 @@
 .hero {
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 63px;
+
+    &--catalog {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -12,10 +16,11 @@
     background-repeat: unset;
     background-position: top;
     background-size: contain;
-    background-color: #e2e2e2;
-    min-height: clamp(520px, 97.13vw, 746px);
+    background-color: #f9f9f9;
+    min-height: clamp(520px, 120vw, 746px);
     position: relative;
     z-index: 0;
+    background-repeat-x: no-repeat;
 
     @media (min-width: variables.$screen-tablet) {
       &::after {
@@ -40,16 +45,16 @@
       background-image: url("../img/hero/hero_mobile@2x.webp");
     }
 
-    @media (min-width: 447px) {
+    @media (min-width: 400px) {
       background-image: url("../img/hero/hero_tablet.webp");
-      background-size: cover;
+      // background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hero/hero_tablet@2x.webp");
       }
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 1000px) {
       background-image: url("../img/hero/hero_desktop.webp");
 
       @media (min-resolution: 2dppx) {
@@ -58,14 +63,14 @@
     }
   }
 
-  &--form {
+  &--notindex {
     background-image: none;
 
     @media (min-resolution: 2dppx) {
       background-image: none;
     }
 
-    background-color: #e2e2e2;
+    background-color: #f1f1f1;
     min-height: 177px;
     position: relative;
     z-index: 0;
@@ -95,6 +100,12 @@
         height: 34px;
         background-size: cover;
       }
+    }
+  }
+
+  &--catalog {
+    @media (min-width: variables.$screen-desktop) {
+      margin-bottom: 128px;
     }
   }
 }

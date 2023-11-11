@@ -67,11 +67,12 @@
     <main class="main-container">
       <h1 class="visually-hidden">Мишка - Вязание на заказ.</h1>
       <section class="hero">
-        <div class="hero__container hero__container--form">
+        <div class="hero__container hero__container--notindex">
           <h2 class="hero__title hero__title--form hero-title title">Вязание на заказ</h2>
         </div>
-          <p class="hero__description description wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
-            форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="hero__description description wrapper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+          простую
+          форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </section>
       <section class="knitting">
         <h2 class="visually-hidden">Форма для заполнения</h2>
@@ -86,7 +87,8 @@
                   <label class="type-list__label" for="interior">
                     <input class="type-list__input input visually-hidden" type="radio" value="Аксессуар для интерьера"
                       id="interior" name="type" checked>
-                    <span class="type-list__description"><span class="type-list__text type-list__text--interior">Аксессуар для интерьера</span></span>
+                    <span class="type-list__description"><span
+                        class="type-list__text type-list__text--interior">Аксессуар для интерьера</span></span>
                   </label>
                 </li>
                 <li class="type-list__item">
@@ -191,7 +193,7 @@
           <div class="form__button form-button wrapper">
             <small class="form-button__asterisk">*Поля обязательны для заполнения</small>
             <button class="form-button__button transparent-button" type="submit"><span
-                class="form-button__description">отправить заказ</span></button>
+                class="transparent-button__description">отправить заказ</span></button>
           </div>
         </form>
       </section>
@@ -273,19 +275,6 @@
         </a>
       </div>
     </footer>
-    <!-- Модальные окна -->
-    <div class="page__modal modal-container page__modal--closed"> <!-- для проверки убрать класс page__modal--closed -->
-      <div class="modal-container__modal modal">
-        <p class="modal__title title">Добавить в корзину</p>
-        <p class="modal__description description">Выберите размер:</p>
-        <div class="modal__buttons size">
-          <button type="button" class="size__button size__button--checked">s</button>
-          <button type="button" class="size__button">m</button>
-          <button type="button" class="size__button">l</button>
-        </div>
-        <button type="button" class="modal__button green-button">Добавить</button>
-      </div>
-    </div>
   </div>
 </body>
 

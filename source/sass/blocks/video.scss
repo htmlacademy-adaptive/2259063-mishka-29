@@ -1,0 +1,24 @@
+@use "../global/variables.scss";
+@use "../global/mixin";
+
+.video {
+  width: 100%;
+  position: relative;
+}
+
+.video__picture {
+  width: 100%;
+}
+
+.video__image {
+  width: 100%;
+  height: 100%;
+}
+
+.video__button {
+  @include mixin.pseudo("../img/stack/sprite.svg#play_video", 100.6px, 76.8px);
+  @include mixin.absolute-center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

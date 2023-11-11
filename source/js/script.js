@@ -27,16 +27,42 @@ orderButton.onclick = function () {
   modal.classList.remove("page__modal--closed");
 };
 
-// -- Выбор размера в модалке.
-// size.addEventListener("click", (event) => {
-//   let target = event.target; // Отлавливаем элемент в родители на который мы нажали
-//   if (target.classList.contains("size__button")) {
-//     // Проверяем тот ли это элемент который нам нужен
-//     for (let i = 0; i < sizeButton.length; i++) {
-//       sizeButton[i].classList.remove("size__button--checked"); // Убираем у других
-//     }
-//     target.classList.add("size__button--checked"); // Добавляем тому на который нажали
-//   }
-// });
 
-// -- Выбор отзыва.
+// Слайдер отзывов
+
+const slider = document.querySelector('.slider-list');
+const prevButton = document.querySelector('.slider-buttons__button--previous');
+const nextButton = document.querySelector('.slider-buttons__button--next');
+const slides = Array.from(slider.querySelectorAll('.slider__item'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSlider();

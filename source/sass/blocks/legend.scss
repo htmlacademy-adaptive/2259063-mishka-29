@@ -6,7 +6,6 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  // padding: 0 30px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -25,7 +24,7 @@
     padding: 0 50px;
     padding-top: 18px;
     position: absolute;
-    max-width: 255px;
+    max-width: 200px;
     left: 0;
     word-break: break-all;
     white-space: inherit;
@@ -36,7 +35,10 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 0 96px;
-    padding-top: 18px;
+    padding: 18px 20px 0 50px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding: 18px 20px 0 96px;
   }
 }

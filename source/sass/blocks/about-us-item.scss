@@ -13,12 +13,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_eco");
       background-repeat: no-repeat;
-      background-position: center;
+      background-position-x: center;
+      background-position-y: bottom;
       background-size: cover;
       display: block;
       width: 33px;
       height: 38px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
   }
 
@@ -29,12 +30,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_money");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: ccontain;
       display: block;
       width: 47px;
-      height: 27px;
-      margin-bottom: 26px;
+      height: 38px;
+      margin-bottom: 18px;
     }
   }
 
@@ -45,12 +47,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_like");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: contain;
       display: block;
       width: 34px;
-      height: 27px;
-      margin-bottom: 21px;
+      height: 38px;
+      margin-bottom: 18px;
     }
   }
 
@@ -61,12 +64,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_thread");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: contain;
       display: block;
-      width: 35px;
-      height: 34px;
-      margin-bottom: 17px;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 18px;
     }
   }
 
@@ -77,12 +81,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_support");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: contain;
       display: block;
       width: 55px;
-      height: 23px;
-      margin-bottom: 26px;
+      height: 38px;
+      margin-bottom: 18px;
     }
   }
 
@@ -91,12 +96,13 @@
       content: "";
       background-image: url("../img/stack/sprite.svg#about_gift");
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: contain;
       display: block;
-      width: 33px;
-      height: 32px;
-      margin-bottom: 20px;
+      width: 37px;
+      height: 38px;
+      margin-bottom: 18px;
     }
   }
 
