@@ -27,6 +27,7 @@
 
 .slider__item {
   display: none;
+  position: relative;
 
   &--current {
     display: block;
@@ -36,6 +37,13 @@
 .slider__author {
   @include mixin.reset;
   padding-bottom: 30px;
+  max-width: 600px;
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-left: 175px;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .slider-buttons__button {
