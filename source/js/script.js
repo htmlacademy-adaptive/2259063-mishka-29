@@ -5,7 +5,7 @@ let map = document.querySelector("iframe");
 let modal = document.querySelector(".page__modal");
 let orderButton = document.querySelector(".week-product__button");
 let cartButton = document.querySelectorAll(".cart-button");
-
+//11
 // -- nojs реализация.
 menu.classList.remove("main-nav__list--noscript");
 map?.classList.remove("location__map--nojs");
