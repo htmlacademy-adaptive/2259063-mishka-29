@@ -14,13 +14,14 @@
     &::after {
       content: "";
       background-image: url("../img/stack/sprite.svg#interior");
-      width: 60px;
-      height: 62px;
+      width: 80px;
+      height: 63px;
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.5;
       position: absolute;
-      right: 0;
+      right: -13px;
+      top: -2px;
     }
   }
 
@@ -28,13 +29,29 @@
     &::after {
       content: "";
       background-image: url("../img/stack/sprite.svg#toys");
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 63px;
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.5;
       position: absolute;
-      right: 0;
+      right: -13px;
+      top: -4px;
+    }
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    &--interior {
+      &::after {
+        right: -19px;
+        top: 3px;
+      }
+    }
+
+    &--toys {
+      &::after {
+        top: 4px;
+      }
     }
   }
 }

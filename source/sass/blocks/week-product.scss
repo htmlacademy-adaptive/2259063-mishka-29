@@ -17,7 +17,8 @@
   @media (min-width: variables.$screen-tablet) {
     &::after {
       background-size: cover;
-      height: 17px;
+      height: 16px;
+      right: -3.5px;
     }
   }
 
@@ -77,6 +78,7 @@
   @media (min-width: variables.$screen-tablet) {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    padding-top: 12px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -120,6 +122,7 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+    padding-top: 3px;
   }
 
   @media (min-width: variables.$screen-tablet) {
@@ -127,9 +130,11 @@
     justify-content: space-between;
     font-size: 43px;
     line-height: 50px;
+    padding-bottom: 37.5px;
 
     &::after {
-      padding-top: 10px;
+      padding-top: 6px;
+      padding-right: 26px;
       text-align: center;
       line-height: 17px;
       flex-basis: 100px;
@@ -154,9 +159,9 @@
 }
 
 .week-product__description {
-  padding-bottom: 28px;
+  padding-bottom: 17px;
   color: #444444;
-  font-size: clamp(15px, 5vw, 17px);
+  font-size: clamp(15px, 4vw, 17px);
   line-height: 24px;
 
   &--price {
@@ -167,15 +172,17 @@
     font-weight: 700;
     line-height: 24px;
     padding: 25.5px 0;
+    padding-bottom: 23.5px;
   }
 
   @media (min-width: variables.$screen-tablet) {
     line-height: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 
     &--price {
-      padding: 0;
-      padding-bottom: 33px;
+      padding: 0 0 29px;
+      position: relative;
+      right: 2px;
     }
   }
 

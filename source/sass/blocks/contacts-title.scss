@@ -4,6 +4,7 @@
   @media (min-width: variables.$screen-tablet) {
     display: flex;
     justify-content: space-between;
+    letter-spacing: 0;
 
     &::after {
       content: "";
@@ -14,6 +15,9 @@
       background-repeat: no-repeat;
       width: 47px;
       height: 81px;
+      position: relative;
+      bottom: 22px;
+      right: 3px;
     }
   }
 

@@ -27,4 +27,21 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
+  padding: 0 10px;
+  position: relative;
+  right: 5px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+    right: 8px;
+    bottom: 2px;
+  }
+}
+
+.copyright-link__logo {
+  @media (min-width: variables.$screen-tablet) {
+    position: relative;
+    left: 4px;
+    bottom: 2px;
+  }
 }

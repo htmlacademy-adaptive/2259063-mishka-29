@@ -36,7 +36,8 @@
 
     &::after {
       background-size: cover;
-      height: 17px;
+      height: 16px;
+      right: -3px;
     }
   }
 
@@ -59,7 +60,7 @@
   max-width: 1150px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 115px;
+    padding-bottom: 86px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -83,7 +84,7 @@
 }
 
 .reviews__title {
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 43px;
@@ -117,13 +118,15 @@
 }
 
 .reviews__buttons {
-  padding-bottom: 38px;
+  padding-bottom: 36px;
 
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     width: 137px;
-    right: 50px;
-    bottom: 110px;
+    right: 66px;
+    bottom: 118px;
+    gap: 38px;
+    padding-bottom: 0;
   }
 }
 
@@ -131,8 +134,8 @@
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     right: 50px;
-    top: 79px;
-    padding: 16px 25px;
+    top: 78px;
+    padding: 15px 25px;
     font-size: 17px;
     line-height: 20px;
     min-width: 175px;

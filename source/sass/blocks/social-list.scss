@@ -12,6 +12,29 @@
 .social-list__link {
   display: flex;
   padding: 3px;
+  position: relative;
+
+  &--youtube {
+    left: -3.5px;
+  }
+
+  &--telegram {
+    left: -3px;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    &--vk {
+      right: 3px;
+    }
+
+    &--youtube {
+      left: -7px;
+    }
+
+    &--telegram {
+      left: -7px;
+    }
+  }
 }
 
 .social-list__logo {
