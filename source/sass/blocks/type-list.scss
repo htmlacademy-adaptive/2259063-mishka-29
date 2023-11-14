@@ -3,7 +3,7 @@
 .type-list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 13px;
 
   @media (min-width: variables.$screen-desktop) {
     display: grid;
@@ -24,15 +24,15 @@
 
 .type-list__description {
   display: flex;
-  gap: 11px;
+  gap: 20px;
   align-items: flex-start;
   position: relative;
 
   &::before {
     content: "";
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border: 2px solid #444444;
     border-radius: 50%;
     flex-shrink: 0;

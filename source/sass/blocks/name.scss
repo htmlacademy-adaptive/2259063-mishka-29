@@ -1,13 +1,12 @@
 @use "../global/variables.scss";
 
 .name__title {
-  padding-bottom: 25px;
+  padding-bottom: 7px;
 }
 
 .name__label {
   display: flex;
   flex-direction: column;
-  gap: 17px;
 
   @media (min-width: variables.$screen-tablet) {
     flex-direction: row;
@@ -25,7 +24,7 @@
   border: none;
   background-color: inherit;
   border-bottom: 2px solid #000000;
-  padding: 17px 9.5px 17px 0;
+  padding: 12px 9.5px 12.1px 0;
   color: #444444;
   font-family: variables.$font-ptsans;
   font-size: 19px;

@@ -159,7 +159,7 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    font-size: 17px;
+    font-size: 20px;
 
     &--thread {
       &::before {
@@ -169,19 +169,19 @@
 
     &--money {
       &::before {
-        margin-bottom: 21px;
+        margin-bottom: 24px;
       }
     }
 
     &--like {
       &::before {
-        margin-bottom: 21px;
+        margin-bottom: 24px;
       }
     }
 
     &--gift {
       &::before {
-        margin-bottom: 21px;
+        margin-bottom: 24px;
       }
     }
   }

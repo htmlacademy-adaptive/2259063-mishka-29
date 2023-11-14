@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .form__type {
-  padding-bottom: 31px;
+  padding-bottom: 26px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 50px;
@@ -17,7 +17,7 @@
 }
 
 .form__name {
-  padding-bottom: 34.5px;
+  padding-bottom: 29.5px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 66px;
@@ -26,7 +26,7 @@
 }
 
 .form__phone {
-  padding-bottom: 34.5px;
+  padding-bottom: 28.5px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 50px;

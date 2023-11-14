@@ -34,10 +34,10 @@
   @media (min-width: variables.$screen-tablet) {
     padding: 0;
     right: 8px;
-    bottom: 2px;
+    bottom: 2.5px;
   }
 
-  @media (min-width: variables.$screen-tablet) {
+  @media (min-width: variables.$screen-desktop) {
     padding: 0;
     right: 10px;
     bottom: 3px;

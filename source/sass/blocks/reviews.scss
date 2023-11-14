@@ -47,11 +47,10 @@
     }
 
     &::after {
-      height: 22px;
+      background-image: url("../img/zigzag_line_desktop.svg");
+      height: 23px;
       width: 1050px;
       margin: 0 auto;
-      bottom: -1.5px;
-      right: -2px;
     }
   }
 }
@@ -139,7 +138,7 @@
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     right: 50px;
-    top: 78px;
+    top: 76px;
     padding: 15px 25px;
     font-size: 17px;
     line-height: 20px;
