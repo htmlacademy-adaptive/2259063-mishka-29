@@ -18,6 +18,12 @@
     padding-top: 7px;
     padding-bottom: 12px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--color {
+      padding-bottom: 10.5px;
+    }
+  }
 }
 
 .week-product-table__description {

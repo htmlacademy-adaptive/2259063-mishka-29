@@ -280,7 +280,7 @@
     &--order {
       font-size: 17px;
       line-height: 24px;
-      padding: 32.5px 0 31.5px;
+      padding: 32.5px 0 31.5px 17px;
     }
 
     &--sale,
@@ -291,11 +291,17 @@
     }
 
     &--secondary {
-      flex-basis: 167px;
+      flex-basis: 185px;
     }
 
     &--hero {
-      flex-basis: fit-content;
+      flex-basis: 179px;
+    }
+
+    &--cart {
+      &::before {
+        top: -1px;
+      }
     }
   }
 
@@ -335,8 +341,8 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    bottom: -60px;
     width: fit-content;
-    right: 0;
+    right: 1.5px;
+    padding-top: 22px;
   }
 }

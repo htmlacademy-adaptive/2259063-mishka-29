@@ -47,9 +47,11 @@
     }
 
     &::after {
-      height: 23px;
+      height: 22px;
       width: 1050px;
       margin: 0 auto;
+      bottom: -1.5px;
+      right: -2px;
     }
   }
 }
@@ -64,6 +66,8 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 132px;
+
     &::before {
       content: "";
       display: block;
@@ -89,9 +93,7 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 82.5px;
-    padding-bottom: 38.5px;
-    padding-right: 180px;
+    padding: 82.5px 180px 38.5px 0;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -99,8 +101,7 @@
     z-index: 1;
     font-size: 53px;
     line-height: 57px;
-    padding-right: 190px;
-    padding-left: 175px;
+    padding: 77px 190px 36px 175px;
   }
 }
 
@@ -127,6 +128,10 @@
     bottom: 118px;
     gap: 38px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    bottom: 166px;
   }
 }
 

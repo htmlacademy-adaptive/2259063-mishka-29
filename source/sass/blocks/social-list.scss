@@ -35,6 +35,23 @@
       left: -7px;
     }
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    &--vk {
+      right: 4px;
+      top: -1px;
+    }
+
+    &--youtube {
+      left: -9px;
+      top: -2px;
+    }
+
+    &--telegram {
+      left: -9px;
+      top: -2px;
+    }
+  }
 }
 
 .social-list__logo {

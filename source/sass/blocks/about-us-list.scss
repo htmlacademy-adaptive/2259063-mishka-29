@@ -11,4 +11,9 @@
     column-gap: 3.2vw;
     row-gap: 25px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+
+    column-gap: 3.45vw;
+  }
 }

@@ -9,6 +9,10 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 18px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    font-size: 17px;
+  }
 }
 
 .slider-author__mail {

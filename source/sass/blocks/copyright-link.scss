@@ -36,6 +36,12 @@
     right: 8px;
     bottom: 2px;
   }
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 0;
+    right: 10px;
+    bottom: 3px;
+  }
 }
 
 .copyright-link__logo {
@@ -43,5 +49,9 @@
     position: relative;
     left: 4px;
     bottom: 2px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    bottom: 3px;
   }
 }

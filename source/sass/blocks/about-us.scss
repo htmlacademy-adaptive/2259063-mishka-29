@@ -7,6 +7,10 @@
   @media (min-width: variables.$screen-tablet) {
     padding-top: 57.5px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 70px;
+  }
 }
 
 .about-us__list {
@@ -18,7 +22,7 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding: 68px 247px 89px 175px;
+    padding: 40px 247px 65px 175px;
   }
 }
 

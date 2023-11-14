@@ -157,6 +157,34 @@
       }
     }
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    font-size: 17px;
+
+    &--thread {
+      &::before {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--money {
+      &::before {
+        margin-bottom: 21px;
+      }
+    }
+
+    &--like {
+      &::before {
+        margin-bottom: 21px;
+      }
+    }
+
+    &--gift {
+      &::before {
+        margin-bottom: 21px;
+      }
+    }
+  }
 }
 
 .about-us__item {
