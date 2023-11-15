@@ -20,8 +20,25 @@
     mask-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
-    right: 7px;
+    right: 8px;
     top: 0;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+
+    &::after {
+      right: 26px;
+    }
+  }
+
+
+  @media (min-width: variables.$screen-desktop) {
+    bottom: 3px;
+    left: 6px;
+
+    &::after {
+      right: 12px;
+    }
   }
 }
 

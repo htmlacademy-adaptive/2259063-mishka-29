@@ -248,7 +248,7 @@
 
       &::before {
         position: relative;
-        left: 0;
+        left: 2px;
         top: 0;
       }
     }
@@ -261,11 +261,11 @@
     }
 
     &--catalog {
-      padding-top: 22px;
+      padding-top: 21px;
     }
 
     &--order {
-      padding-top: 24px;
+      padding-top: 23px;
     }
   }
 
@@ -335,7 +335,7 @@
     padding: 20.5px 0;
     order: 3;
     position: absolute;
-    top: 88.5px;
+    top: 89.5px;
     right: 0;
     max-width: 265px;
   }

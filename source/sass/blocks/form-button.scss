@@ -23,11 +23,18 @@
     max-width: 320px;
     text-align: end;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: relative;
+    left: 1px;
+  }
 }
 
 .form-button__button {
   width: 100%;
   background: inherit;
+  letter-spacing: -0.7px;
+  padding-bottom: 13px;
 
   @media (min-width: variables.$screen-tablet) {
     width: auto;

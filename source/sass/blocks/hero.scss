@@ -95,22 +95,26 @@
         content: "";
         display: block;
         width: 100%;
-        height: 24px;
-        background-image: url("../img/zigzag_line_hero.svg");
+        height: 25px;
+        background-image: url(../img/zigzag_line_hero.svg);
         background-repeat: repeat-x;
         background-position: bottom;
         z-index: 0;
         position: absolute;
-        bottom: -6px;
+        bottom: 0px;
+        right: 0px;
+        background-size: cover;
       }
     }
 
     @media (min-width: variables.$screen-desktop) {
       min-height: 272px;
+      margin-bottom: 98px;
 
       &::after {
-        height: 34px;
+        height: 38px;
         background-size: cover;
+        bottom: -2px;
       }
     }
   }
@@ -178,10 +182,12 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 17px;
     line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 46px;
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding-left: 217px;
+    padding-left: 226px;
     padding-right: 217px;
     white-space: initial;
     max-width: 1150px;

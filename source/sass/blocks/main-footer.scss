@@ -23,6 +23,8 @@
 .main-footer__list {
   padding: 28px 0;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  top: -2px;
 
   @media (min-width: variables.$screen-tablet) {
     border-bottom: none;

@@ -10,6 +10,8 @@
 
   @media (min-width: variables.$screen-tablet) {
     display: block;
+    position: relative;
+    left: -2px;
   }
 
   &:hover {
