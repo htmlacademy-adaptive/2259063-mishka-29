@@ -18,6 +18,8 @@
 .contacts__container {
   &--main {
     position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
     padding-bottom: 39px;
 
     @media (min-width: variables.$screen-tablet) {

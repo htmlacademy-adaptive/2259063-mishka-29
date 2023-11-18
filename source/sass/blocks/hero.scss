@@ -21,7 +21,7 @@
     min-height: clamp(488px, 120vw, 746px);
     position: relative;
     z-index: 0;
-    background-repeat-x: no-repeat;
+    background-repeat: no-repeat;
 
     @media (min-width: variables.$screen-tablet) {
       background-position-y: 0;
