@@ -6,6 +6,10 @@
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 53px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 57px;
+  }
 }
 
 .catalog__list {

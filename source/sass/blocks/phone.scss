@@ -25,12 +25,10 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
-
     &::after {
       right: 26px;
     }
   }
-
 
   @media (min-width: variables.$screen-desktop) {
     bottom: 3px;
