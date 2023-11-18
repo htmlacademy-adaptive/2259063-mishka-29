@@ -88,7 +88,7 @@
     z-index: 0;
 
     @media (min-width: variables.$screen-tablet) {
-      margin-bottom: 54px;
+      margin-bottom: 65px;
       min-height: 238px;
 
       &::after {
@@ -121,7 +121,7 @@
 
   &--catalog {
     @media (min-width: variables.$screen-desktop) {
-      margin-bottom: 128px;
+      margin-bottom: 110px;
     }
   }
 }

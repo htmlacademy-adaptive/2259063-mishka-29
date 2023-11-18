@@ -2,8 +2,11 @@
 @use "../global/mixin";
 
 .production__wrapper {
-  padding-bottom: 58px;
+  padding-bottom: 57px;
 
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 61.5px;
+  }
 
   @media (min-width: variables.$screen-desktop) {
     display: flex;
@@ -89,7 +92,7 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding: 21px 13px 26.5px 34px;
+  padding: 20px 13px 25px 34px;
   gap: 25px;
   border: 1px solid #ececec;
 
@@ -103,11 +106,13 @@
 
     &--tablet {
       display: flex;
-      border-top: none;
+      border: none;
       margin: 0;
       margin-right: auto;
-      padding-top: 0;
-      padding-bottom: 24.5px;
+      padding-top: 2px;
+      padding-bottom: 21.5px;
+      padding-left: 40px;
+      gap: 33px;
     }
   }
 
@@ -139,6 +144,7 @@
   @media (min-width: variables.$screen-tablet) {
     white-space: initial;
     padding-right: 37px;
+    padding-left: 39px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -148,9 +154,11 @@
 
 .production__button {
   order: 4;
+  padding: 14px 18px;
 
   @media (min-width: variables.$screen-tablet) {
-    width: 77vw;
+    width: 76vw;
+    font-size: 17px;
   }
 
   @media (min-width: variables.$screen-desktop) {

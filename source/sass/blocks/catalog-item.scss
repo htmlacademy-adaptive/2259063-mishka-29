@@ -5,7 +5,7 @@
   border: 1px solid #ececec;
 
   @media (min-width: variables.$screen-tablet) {
-    padding: 27px 33px 25.5px;
+    padding: 27px 27px 20.5px;
     border: 1px solid #ececec;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,6 @@
 }
 
 .catalog-item__wrapper {
-
   @media (min-width: variables.$screen-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -61,10 +60,27 @@
 
   &--toyscart {
     padding-top: 24px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 0;
+
+    &--underwear {
+      padding-bottom: 10px;
+    }
+
+    &--toyscart {
+      padding-bottom: 6px;
+    }
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 0;
+
+    &--underwear {
+      padding-bottom: 5px;
+    }
   }
 }
 
@@ -74,6 +90,10 @@
   line-height: 30px;
   text-align: start;
   padding-bottom: 17.5px;
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 12.5px;
+  }
 }
 
 .catalog-item__price {
