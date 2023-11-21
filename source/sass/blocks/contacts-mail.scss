@@ -23,22 +23,18 @@
 
   @media (min-width: variables.$screen-tablet) {
     max-width: 230px;
+    height: fit-content;
   }
 
   &:hover {
     transition: 0.2s;
     color: #62d1ba;
-
-    &::after {
-      transition: 0.2s;
-      background-color: #46c1ae;
-    }
   }
 
   &:active {
-    &::after {
-      transition: 0.2s;
-      opacity: 0.1;
+    .mail-link__text {
+      transition: 0.1s;
+      text-decoration-color: rgba(98, 209, 186, 0.1);
     }
   }
 }
