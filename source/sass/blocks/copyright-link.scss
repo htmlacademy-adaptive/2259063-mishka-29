@@ -9,14 +9,14 @@
   width: fit-content;
 
   &:hover {
-    .copyright-link__logo path {
+    path {
       transition: 0.2s;
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .copyright-link__logo path {
+    path {
       transition: 0.1s;
       fill-opacity: 0.3;
     }

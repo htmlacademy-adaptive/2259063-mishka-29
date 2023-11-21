@@ -9,6 +9,7 @@
 .size__list {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
   padding-bottom: 0;
 }
@@ -53,4 +54,9 @@
   .size__description {
     border-color: rgba(68, 68, 68, 0.1);
   }
+}
+
+.size__input:focus-visible + .size__description {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
 }

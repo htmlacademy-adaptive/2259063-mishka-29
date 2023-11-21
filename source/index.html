@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Мишка</title>
   <link rel="preload" href="fonts/open_sans_regular.woff2" as="font" />
-  <link rel="preload" href="fonts/open_sans_bold.woff2" as="font" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon_32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-  <script defer src="js/script _index.js"></script>
+  <script defer src="js/script_index.js"></script>
 </head>
 
 <body class="page__body">
@@ -128,7 +127,7 @@
               <p class="week-product__description description week-product__description--price">
                 Цена: 990 руб.</p>
               <button class="week-product__button transparent-button transparent-button--week-product"><span
-                  class="transparent-button____description">Заказать</span></button>
+                  class="transparent-button___description">Заказать</span></button>
             </div>
           </div>
         </div>
@@ -201,7 +200,7 @@
             </div>
           </div>
           <a class="reviews__link transparent-button transparent-button--reviews  link" href="#"><span
-              class="transparent-button____description">Написать</span></a>
+              class="transparent-button___description">Написать</span></a>
         </div>
       </section>
       <section class="contacts">
@@ -342,7 +341,8 @@
             <legend class="visually-hidden">Выбрать размер</legend>
             <ul class="size__list list">
               <li class="size__item">
-                <label class="size__label" for="small">
+                <label class="size__label" for="small" aria-label="">
+                  <span class="visually-hidden">Маленький</span>
                   <input class="size__input input visually-hidden" type="radio" id="small" value="small" name="size"
                     checked>
                   <span class="size__description"><span class="size__text">s</span></span>
@@ -350,12 +350,14 @@
               </li>
               <li class="size__item">
                 <label class="size__label" for="medium">
+                  <span class="visually-hidden">Средний</span>
                   <input class="size__input input visually-hidden" type="radio" id="medium" value="medium" name="size">
                   <span class="size__description"><span class="size__text">m</span></span>
                 </label>
               </li>
               <li class="size__item">
                 <label class="size__label" for="large">
+                  <span class="visually-hidden">Большой</span>
                   <input class="size__input input visually-hidden" type="radio" id="large" value="large" name="size">
                   <span class="size__description"><span class="size__text">l</span></span>
                 </label>
