@@ -53,10 +53,12 @@
   font-weight: 400;
   line-height: 18px;
 
-  &:hover,
-  :active {
-    transition: border-color 0.2s;
-    border-color: #62d1ba;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    :active {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+    }
   }
 
   &:disabled {
@@ -83,11 +85,13 @@
   }
 }
 
-.phone__label:hover,
-.phone__label:active {
-  &::after {
-    transition: background-color 0.2s;
-    background-color: #62d1ba;
+@media (hover: hover) and (pointer: fine) {
+  .phone__label:hover,
+  .phone__label:active {
+    &::after {
+      transition: background-color 0.2s;
+      background-color: #62d1ba;
+    }
   }
 }
 
@@ -105,8 +109,10 @@
   opacity: 0.2;
 }
 
-.phone__label:hover:has(.phone__input:disabled) {
-  &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+@media (hover: hover) and (pointer: fine) {
+  .phone__label:hover:has(.phone__input:disabled) {
+    &::after {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }

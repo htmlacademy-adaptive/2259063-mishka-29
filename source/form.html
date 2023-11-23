@@ -160,7 +160,8 @@
           <fieldset class="form__phone phone fieldset">
             <legend class="visually-hidden">телефон</legend>
             <div class="fieldset__container fieldset__container--phone wrapper">
-              <h3 class="phone__title legend title">тел</h3>
+              <span class="visually-hidden">Введите свой номер телефона</span>
+              <h3 class="phone__title legend title" title="Наведите курсор на поле справа">тел</h3>
               <label class="phone__label label" for="phone">
                 <input class="phone__input input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
                   name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -170,8 +171,9 @@
           <fieldset class="form__email email fieldset">
             <legend class="visually-hidden">E-mail</legend>
             <div class="fieldset__container fieldset__container--email wrapper">
-              <h3 class="email__title legend title">E-mail</h3>
+              <h3 class="email__title legend title" title="Наведите курсор на поле справа">E-mail</h3>
               <label class="email__label label" for="email">
+                <span class="visually-hidden">Введите свой E-mail</span>
                 <input class="email__input input" type="email" name="email" id="email" placeholder="Ваш Email*"
                   required>
               </label>
@@ -180,7 +182,7 @@
           <fieldset class="form__add add fieldset">
             <legend class="visually-hidden">Дополнительно</legend>
             <div class="fieldset__container fieldset__container--add wrapper">
-              <h3 class="add__title legend title">Доп</h3>
+              <h3 class="add__title legend title" title="Наведите курсор на поле справа">Доп</h3>
               <label class="add__label label" for="add">
                 <span class="visually-hidden">Напишите свои пожелания</span>
                 <textarea class="add__input" rows="6" id="add" name="add"

@@ -8,17 +8,19 @@
   color: #000000;
   width: fit-content;
 
-  &:hover {
-    path {
-      transition: 0.2s;
-      fill: #46c1ae;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      path {
+        transition: 0.2s;
+        fill: #46c1ae;
+      }
     }
-  }
 
-  &:active {
-    path {
-      transition: 0.1s;
-      fill-opacity: 0.3;
+    &:active {
+      path {
+        transition: 0.1s;
+        fill-opacity: 0.3;
+      }
     }
   }
 }

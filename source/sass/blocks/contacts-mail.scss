@@ -26,15 +26,17 @@
     height: fit-content;
   }
 
-  &:hover {
-    transition: 0.2s;
-    color: #62d1ba;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transition: 0.2s;
+      color: #62d1ba;
+    }
 
-  &:active {
-    .mail-link__text {
-      transition: 0.1s;
-      text-decoration-color: rgba(98, 209, 186, 0.1);
+    &:active {
+      .mail-link__text {
+        transition: 0.1s;
+        text-decoration-color: rgba(98, 209, 186, 0.1);
+      }
     }
   }
 }

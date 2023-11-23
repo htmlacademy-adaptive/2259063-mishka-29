@@ -36,16 +36,18 @@
     }
   }
 
-  &:hover {
-    transition: 0.2s;
-    background-color: #444444;
-    color: #ffffff;
-  }
-
-  &:active {
-    .transparent-button___description {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
       transition: 0.2s;
-      opacity: 0.3;
+      background-color: #444444;
+      color: #ffffff;
+    }
+
+    &:active {
+      .transparent-button___description {
+        transition: 0.2s;
+        opacity: 0.3;
+      }
     }
   }
 }

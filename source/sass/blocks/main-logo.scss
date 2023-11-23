@@ -14,11 +14,13 @@
     left: -2px;
   }
 
-  &:hover {
-    opacity: 0.6;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

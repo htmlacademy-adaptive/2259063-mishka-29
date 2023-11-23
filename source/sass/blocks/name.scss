@@ -37,6 +37,14 @@
   font-weight: 400;
   line-height: 18px;
 
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    &:active {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+    }
+  }
+
   &:not(:placeholder-shown) {
     transition: border-color 0.2s;
     border-color: #62d1ba;
@@ -60,10 +68,4 @@
   @media (min-width: variables.$screen-tablet) {
     font-size: 19px;
   }
-}
-
-.name__input:hover,
-.name__input:active {
-  transition: border-color 0.2s;
-  border-color: #62d1ba;
 }

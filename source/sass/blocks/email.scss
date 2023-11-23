@@ -59,10 +59,12 @@
   font-weight: 400;
   line-height: 18px;
 
-  &:hover,
-  :active {
-    transition: border-color 0.2s;
-    border-color: #62d1ba;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover,
+    :active {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+    }
   }
 
   &:disabled {
@@ -89,11 +91,13 @@
   }
 }
 
-.email__label:hover,
-.email__label:active {
-  &::after {
-    transition: background-color 0.2s;
-    background-color: #62d1ba;
+@media (hover: hover) and (pointer: fine) {
+  .email__label:hover,
+  .email__label:active {
+    &::after {
+      transition: background-color 0.2s;
+      background-color: #62d1ba;
+    }
   }
 }
 
@@ -111,8 +115,10 @@
   opacity: 0.2;
 }
 
-.email__label:hover:has(.email__input:disabled) {
-  &::after {
-    background-color: rgba(0, 0, 0, 0.2);
+@media (hover: hover) and (pointer: fine) {
+  .email__label:hover:has(.email__input:disabled) {
+    &::after {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }

@@ -14,13 +14,15 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  &:hover {
-    transition: 0.2s;
-    background-color: #46c1ae;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transition: 0.2s;
+      background-color: #46c1ae;
+    }
 
-  &:active {
-    transition: 0.1s;
-    opacity: 0.8;
+    &:active {
+      transition: 0.1s;
+      opacity: 0.8;
+    }
   }
 }

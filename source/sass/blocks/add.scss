@@ -18,10 +18,18 @@
   font-weight: 400;
   line-height: 18px;
 
-  &:hover,
-  &:active {
-    transition: border-color 0.2s;
-    border-color: #62d1ba;
+  @media (hover: hover) and (pointer: fine) {
+    &:focus-visible {
+      outline: 3px solid #444444;
+      outline-offset: 3px;
+    }
+
+    &:hover,
+    &:active {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+      outline: none;
+    }
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -47,8 +55,10 @@
 .add__input:disabled {
   opacity: 0.2;
 
-  &:hover {
-    border-color: #000000;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      border-color: #000000;
+    }
   }
 }
 

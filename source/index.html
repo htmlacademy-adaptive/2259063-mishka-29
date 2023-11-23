@@ -126,8 +126,8 @@
             <div class="week-product__container week-product__container--secondary">
               <p class="week-product__description description week-product__description--price">
                 Цена: 990 руб.</p>
-              <button class="week-product__button transparent-button transparent-button--week-product"><span
-                  class="transparent-button___description">Заказать</span></button>
+              <a class="week-product__button transparent-button transparent-button--week-product link" href="#"><span
+                  class="transparent-button___description">Заказать</span></a>
             </div>
           </div>
         </div>
@@ -341,23 +341,20 @@
             <legend class="visually-hidden">Выбрать размер</legend>
             <ul class="size__list list">
               <li class="size__item">
-                <label class="size__label" for="small" aria-label="">
-                  <span class="visually-hidden">Маленький</span>
+                <label class="size__label" for="small" aria-label="Малый">
                   <input class="size__input input visually-hidden" type="radio" id="small" value="small" name="size"
                     checked>
                   <span class="size__description"><span class="size__text">s</span></span>
                 </label>
               </li>
               <li class="size__item">
-                <label class="size__label" for="medium">
-                  <span class="visually-hidden">Средний</span>
+                <label class="size__label" for="medium" aria-label="Между малым и средним">
                   <input class="size__input input visually-hidden" type="radio" id="medium" value="medium" name="size">
                   <span class="size__description"><span class="size__text">m</span></span>
                 </label>
               </li>
               <li class="size__item">
-                <label class="size__label" for="large">
-                  <span class="visually-hidden">Большой</span>
+                <label class="size__label" for="large" aria-label="Средний">
                   <input class="size__input input visually-hidden" type="radio" id="large" value="large" name="size">
                   <span class="size__description"><span class="size__text">l</span></span>
                 </label>

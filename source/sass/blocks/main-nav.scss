@@ -51,14 +51,16 @@
     margin: 0;
   }
 
-  &:hover {
-    opacity: 0.6;
-    transition: 0.2s;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.6;
+      transition: 0.2s;
+    }
 
-  &:active {
-    opacity: 0.3;
-    transition: 0.2s;
+    &:active {
+      opacity: 0.3;
+      transition: 0.2s;
+    }
   }
 }
 
@@ -78,12 +80,14 @@
   background-position: center;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.6;
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      opacity: 0.6;
+    }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--cross {
@@ -305,20 +309,22 @@
     }
   }
 
-  &:hover {
-    transition: 0.2s;
-    opacity: 0.6;
-
-    &::before {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
       transition: 0.2s;
-      background-color: #63d1bb;
-      opacity: 1;
-    }
-  }
+      opacity: 0.6;
 
-  &:active {
-    transition: 0.2s;
-    opacity: 0.3;
+      &::before {
+        transition: 0.2s;
+        background-color: #63d1bb;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      transition: 0.2s;
+      opacity: 0.3;
+    }
   }
 }
 

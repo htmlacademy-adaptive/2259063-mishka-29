@@ -30,14 +30,16 @@
   background-color: inherit;
   border: 2px solid rgba(68, 68, 68, 0.1);
 
-  &:hover {
-    transition: 0.2s;
-    border-color: rgba(68, 68, 68, 0.3);
-  }
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transition: 0.2s;
+      border-color: rgba(68, 68, 68, 0.3);
+    }
 
-  &:active {
-    transition: border-color 0.2s;
-    border-color: #62d1ba;
+    &:active {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+    }
   }
 }
 
@@ -50,13 +52,15 @@
   opacity: 0.5;
 }
 
-.size__label:hover:has(.size__input:disabled) {
-  .size__description {
-    border-color: rgba(68, 68, 68, 0.1);
+@media (hover: hover) and (pointer: fine) {
+  .size__label:hover:has(.size__input:disabled) {
+    .size__description {
+      border-color: rgba(68, 68, 68, 0.1);
+    }
   }
-}
 
-.size__input:focus-visible + .size__description {
-  outline: 2px solid #000000;
-  outline-offset: 2px;
+  .size__input:focus-visible + .size__description {
+    outline: 2px solid #000000;
+    outline-offset: 2px;
+  }
 }
