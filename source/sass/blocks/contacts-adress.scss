@@ -22,4 +22,9 @@
   @media (min-width: variables.$screen-tablet) {
     flex-basis: 257px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    position: relative;
+    left: 12px;
+  }
 }

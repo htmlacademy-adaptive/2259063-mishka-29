@@ -3,11 +3,8 @@ let button = document.querySelector(".main-nav__button");
 let logo = document.querySelector(".main-nav__logo");
 let map = document.querySelector("iframe");
 let modal = document.querySelector(".page__modal");
-// let sizeButton = document.querySelectorAll(".size__button");
-// let size = document.querySelector(".size");
 let orderButton = document.querySelector(".week-product__button");
-// let review = document.querySelectorAll(".slider__item")
-// let sliderButton = document.querySelectorAll(".slider-buttons__button")
+let cartButtonAdd = document.querySelector(".modal__button");
 
 // -- nojs реализация.
 menu.classList.remove("main-nav__list--noscript");
@@ -27,19 +24,18 @@ orderButton.onclick = function () {
   modal.classList.remove("page__modal--closed");
 };
 
+// --Слайдер отзывов
 
-// Слайдер отзывов
-
-const slider = document.querySelector('.slider-list');
-const prevButton = document.querySelector('.slider-buttons__button--previous');
-const nextButton = document.querySelector('.slider-buttons__button--next');
-const slides = Array.from(slider.querySelectorAll('.slider__item'));
+const slider = document.querySelector(".slider-list");
+const prevButton = document.querySelector(".slider-buttons__button--previous");
+const nextButton = document.querySelector(".slider-buttons__button--next");
+const slides = Array.from(slider.querySelectorAll(".slider__item"));
 const slideCount = slides.length;
 let slideIndex = 0;
 
 // Устанавливаем обработчики событий для кнопок
-prevButton.addEventListener('click', showPreviousSlide);
-nextButton.addEventListener('click', showNextSlide);
+prevButton.addEventListener("click", showPreviousSlide);
+nextButton.addEventListener("click", showNextSlide);
 
 // Функция для показа предыдущего слайда
 function showPreviousSlide() {
@@ -57,12 +53,18 @@ function showNextSlide() {
 function updateSlider() {
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
-      slide.style.display = 'block';
+      slide.style.display = "block";
     } else {
-      slide.style.display = 'none';
+      slide.style.display = "none";
     }
   });
 }
 
 // Инициализация слайдера
 updateSlider();
+
+// -- Закрытие модалки каталог
+
+cartButtonAdd.onclick = function () {
+  modal.classList.add("page__modal--closed");
+}

@@ -8,7 +8,7 @@
 }
 
 .color__title {
-  padding-bottom: 25px;
+  padding-bottom: 4px;
 }
 
 .color__label {
@@ -35,6 +35,8 @@
     height: 38px;
     border: 2px solid #444444;
     flex-shrink: 0;
+    position: relative;
+    top: -2px;
   }
 
   &::after {
@@ -53,6 +55,8 @@
   }
 
   @media (min-width: variables.$screen-tablet) {
+    gap: 29px;
+
     &::before {
       width: 52px;
       height: 52px;
@@ -74,40 +78,46 @@
   @media (min-width: variables.$screen-tablet) {
     padding-top: 15px;
   }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 18px;
+  }
 }
 
 .color__input:checked + .color__description::after {
   display: block;
 }
 
-.color__label:hover {
-  .color__description::before {
+@media (hover: hover) and (pointer: fine) {
+  .color__label:hover {
+    .color__description::before {
+      transition: border-color 0.2s;
+      border-color: #62d1ba;
+    }
+  }
+
+  .color__input:focus-visible + .color__description::before {
+    outline: 2px solid #000000;
+    outline-offset: 3px;
     transition: border-color 0.2s;
     border-color: #62d1ba;
   }
-}
 
-.color__input:focus-visible + .color__description::before {
-  outline: 2px solid #000000;
-  outline-offset: 3px;
-  transition: border-color 0.2s;
-  border-color: #62d1ba;
-}
-
-.color__label:active {
-  .color__description::before {
-    transition: border-color 0.2s;
-    border-color: rgba(0, 0, 0, 0.3);
-    outline: none;
+  .color__label:active {
+    .color__description::before {
+      transition: border-color 0.2s;
+      border-color: rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
   }
-}
 
-.color__label:has(.color__input:disabled) {
-  opacity: 0.5;
-}
+  .color__label:has(.color__input:disabled) {
+    opacity: 0.5;
+  }
 
-.color__label:hover:has(.color__input:disabled) {
-  .color__description::before {
-    border-color: #444444;
+  .color__label:hover:has(.color__input:disabled) {
+    .color__description::before {
+      border-color: #444444;
+    }
   }
 }

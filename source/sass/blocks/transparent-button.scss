@@ -12,16 +12,42 @@
   border: 2px solid #444444;
   word-wrap: break-word;
 
-  &:hover {
-    transition: 0.2s;
-    background-color: #444444;
-    color: #ffffff;
+  &--week-product {
+    padding-top: 16px;
+    padding-bottom: 13px;
+    top: 0.5px;
+    letter-spacing: -0.6px;
   }
 
-  &:active {
-    .transparent-button__text {
+  &--reviews {
+    padding-top: 16px;
+    padding-bottom: 13px;
+  }
+
+  &--contacts {
+    padding-top: 16px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: variables.$screen-tablet) {
+    &--week-product {
+      top: 0.5px;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
       transition: 0.2s;
-      opacity: 0.3;
+      background-color: #444444;
+      color: #ffffff;
+    }
+
+    &:active {
+      .transparent-button__description {
+        transition: 0.2s;
+        opacity: 0.3;
+      }
     }
   }
 }

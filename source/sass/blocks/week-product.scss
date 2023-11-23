@@ -17,15 +17,18 @@
   @media (min-width: variables.$screen-tablet) {
     &::after {
       background-size: cover;
-      height: 17px;
+      height: 16px;
+      right: -3.5px;
     }
   }
 
   @media (min-width: variables.$screen-desktop) {
     &::after {
-      height: 23px;
+      height: 22px;
       width: 1050px;
       margin: 0 auto;
+      bottom: -1.5px;
+      right: -2px;
     }
   }
 }
@@ -42,6 +45,7 @@
 
   @media (min-width: variables.$screen-desktop) {
     padding-top: 0;
+    padding-bottom: 72px;
   }
 }
 
@@ -77,6 +81,7 @@
   @media (min-width: variables.$screen-tablet) {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
+    padding-top: 12px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -120,6 +125,7 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+    padding-top: 3px;
   }
 
   @media (min-width: variables.$screen-tablet) {
@@ -127,9 +133,11 @@
     justify-content: space-between;
     font-size: 43px;
     line-height: 50px;
+    padding-bottom: 37.5px;
 
     &::after {
-      padding-top: 10px;
+      padding-top: 6px;
+      padding-right: 26px;
       text-align: center;
       line-height: 17px;
       flex-basis: 100px;
@@ -140,7 +148,7 @@
     padding-top: 65px;
     padding-bottom: 35px;
     justify-content: flex-start;
-    gap: 43px;
+    gap: 50px;
     font-size: 53px;
     line-height: 57px;
     padding-left: 25px;
@@ -149,41 +157,54 @@
 
     &::after {
       order: 1;
+      padding: 0;
+      position: relative;
+      left: 7px;
+      top: 8px;
     }
   }
 }
 
 .week-product__description {
-  padding-bottom: 28px;
+  padding-bottom: 17px;
   color: #444444;
-  font-size: clamp(15px, 5vw, 17px);
+  font-size: 15px;
   line-height: 24px;
 
   &--price {
     color: #444444;
     text-align: center;
-    font-size: clamp(17px, 5vw, 20px);
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
     padding: 25.5px 0;
+    padding-bottom: 23.5px;
   }
 
   @media (min-width: variables.$screen-tablet) {
     line-height: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
+    font-size: 17px;
 
     &--price {
-      padding: 0;
-      padding-bottom: 33px;
+      padding: 0 0 29px;
+      font-size: 20px;
+      position: relative;
+      right: 2px;
     }
   }
 
   @media (min-width: variables.$screen-desktop) {
+    padding-top: 0.5px;
     padding-bottom: 50px;
+    position: relative;
+    right: 1px;
 
     &--price {
-      padding-bottom: 33px;
+      padding-top: 13px;
+      padding-bottom: 29px;
+      font-size: 20px;
     }
   }
 }

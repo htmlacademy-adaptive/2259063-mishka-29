@@ -3,5 +3,9 @@
 .modal-container__modal {
   position: relative;
   margin: auto;
-  padding: 28.5px 30px 46px 30px;
+  padding: 33px 30px 45px;
+
+  @media (min-width: variables.$screen-tablet) {
+    padding: 50px 30px;
+  }
 }

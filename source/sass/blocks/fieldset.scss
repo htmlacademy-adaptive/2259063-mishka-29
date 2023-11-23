@@ -20,24 +20,33 @@
       padding-left: 217px;
       display: grid;
       grid-template-columns: repeat(2, 248px);
+      column-gap: 14px;
+      row-gap: 24.4px;
+      position: relative;
+      top: 1px;
     }
 
     @media (min-width: variables.$screen-desktop) {
       grid-template-columns: repeat(auto-fit, 248px);
+      padding-left: 224px;
+      column-gap: 16px;
+      row-gap: 23px;
     }
   }
 
   &--name {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 22.2px;
 
     @media (min-width: variables.$screen-tablet) {
       padding-left: 217px;
+      gap: 25px;
     }
 
     @media (min-width: variables.$screen-desktop) {
       padding-right: 227px;
+      padding-left: 227px;
     }
   }
 
@@ -68,6 +77,7 @@
 
     @media (min-width: variables.$screen-desktop) {
       padding-right: 227px;
+      padding-left: 225px;
     }
   }
 }

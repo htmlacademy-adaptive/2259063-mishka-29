@@ -1,7 +1,7 @@
 @use "../global/variables.scss";
 
 .form__type {
-  padding-bottom: 31px;
+  padding-bottom: 26px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 50px;
@@ -17,36 +17,51 @@
 }
 
 .form__name {
-  padding-bottom: 34.5px;
+  padding-bottom: 29.5px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-top: 66px;
+    padding-top: 49px;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 50px;
   }
 }
 
 .form__phone {
-  padding-bottom: 34.5px;
+  padding-bottom: 28.5px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-top: 50px;
+    padding-top: 47px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 49px;
   }
 }
 
 .form__email {
-  padding-bottom: 34.5px;
+  padding-bottom: 28.5px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-top: 24px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
 }
 
 .form__add {
-  padding-bottom: 17px;
+  padding-bottom: 11px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-top: 50px;
-    padding-bottom: 53px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    padding-top: 48px;
+    padding-bottom: 45px;
   }
 }
 
@@ -54,8 +69,13 @@
   padding-bottom: 55px;
   max-width: 1150px;
 
+  @media (min-width: variables.$screen-tablet) {
+    padding-bottom: 48px;
+  }
+
   @media (min-width: variables.$screen-desktop) {
     padding-right: 227px;
-    padding-left: 217px;
+    padding-left: 225px;
+    padding-bottom: 50px;
   }
 }

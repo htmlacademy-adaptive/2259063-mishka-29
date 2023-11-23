@@ -36,7 +36,8 @@
 
     &::after {
       background-size: cover;
-      height: 17px;
+      height: 16px;
+      right: -3px;
     }
   }
 
@@ -46,6 +47,7 @@
     }
 
     &::after {
+      background-image: url("../img/zigzag_line_desktop.svg");
       height: 23px;
       width: 1050px;
       margin: 0 auto;
@@ -59,10 +61,12 @@
   max-width: 1150px;
 
   @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 115px;
+    padding-bottom: 86px;
   }
 
   @media (min-width: variables.$screen-desktop) {
+    padding-bottom: 132px;
+
     &::before {
       content: "";
       display: block;
@@ -83,14 +87,12 @@
 }
 
 .reviews__title {
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 82.5px;
-    padding-bottom: 38.5px;
-    padding-right: 180px;
+    padding: 82.5px 180px 38.5px 0;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -98,8 +100,7 @@
     z-index: 1;
     font-size: 53px;
     line-height: 57px;
-    padding-right: 190px;
-    padding-left: 175px;
+    padding: 77px 190px 36px 175px;
   }
 }
 
@@ -117,13 +118,19 @@
 }
 
 .reviews__buttons {
-  padding-bottom: 38px;
+  padding-bottom: 36px;
 
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     width: 137px;
-    right: 50px;
-    bottom: 110px;
+    right: 66px;
+    bottom: 118px;
+    gap: 38px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: variables.$screen-desktop) {
+    bottom: 166px;
   }
 }
 
@@ -131,8 +138,8 @@
   @media (min-width: variables.$screen-tablet) {
     position: absolute;
     right: 50px;
-    top: 79px;
-    padding: 16px 25px;
+    top: 77px;
+    padding: 15px 25px;
     font-size: 17px;
     line-height: 20px;
     min-width: 175px;

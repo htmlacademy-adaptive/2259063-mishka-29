@@ -5,14 +5,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Мишка. Каталог</title>
+  <link rel="preload" href="fonts/open_sans_regular.woff2" as="font" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="fonts/open_sans_regular.woff2" as="font" />
-  <link rel="preload" href="fonts/open_sans_bold.woff2" as="font" />
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-  <script defer src="js/script.js"></script>
+  <script defer src="js/script_catalog.js"></script>
 </head>
 
 <body class="page__body">
@@ -109,8 +108,8 @@
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">1 200 руб.</span>
-                    <button class="catalog-item__button cart-button" type="button" aria-label="Добавить в корзину"><span
-                        class="cart-button__icon"></span></button>
+                    <a class="catalog-item__button cart-button link" href="#" aria-label="Добавить в корзину"><span
+                        class="cart-button__icon"></span></a>
                   </div>
                 </div>
               </div>
@@ -142,15 +141,15 @@
                 </a>
                 <div class="catalog-item__container catalog-description">
                   <div class="catalog-description__container catalog-description__container--title">
-                    <h3 class="catalog-item__title catalog-title title">
+                    <h3 class="catalog-item__title catalog-item__title--underwear catalog-title title">
                       <a class="catalog-title__link link" href="#">Корзинка для белья</a>
                     </h3>
                     <p class="catalog-item__description description">Диаметр 15 см, высота 10 см</p>
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">690 руб.</span>
-                    <button class="catalog-item__button cart-button" type="button"><span class="cart-button__icon"
-                        aria-label="Добавить в корзину"></span></button>
+                    <a class="catalog-item__button cart-button link" href="#" aria-label="Добавить в корзину"><span
+                        class="cart-button__icon"></span></a>
                   </div>
                 </div>
               </div>
@@ -182,15 +181,15 @@
                 </a>
                 <div class="catalog-item__container catalog-description">
                   <div class="catalog-description__container catalog-description__container--title">
-                    <h3 class="catalog-item__title catalog-title title">
+                    <h3 class="catalog-item__title catalog-item__title--toyscart catalog-title title">
                       <a class="catalog-title__link link" href="#">Большая корзинка для игрушек</a>
                     </h3>
                     <p class="catalog-item__description description">Диаметр 30 см, высота 30 см</p>
                   </div>
                   <div class="catalog-description__container catalog-description__container--cart">
                     <span class="catalog-item__price">1 500 руб.</span>
-                    <button class="catalog-item__button cart-button" type="button" aria-label="Добавить в корзину"><span
-                        class="cart-button__icon"></span></button>
+                    <a class="catalog-item__button cart-button link" href="#" aria-label="Добавить в корзину"><span
+                        class="cart-button__icon"></span></a>
                   </div>
                 </div>
               </div>
@@ -230,8 +229,7 @@
           <div class="production__container production__container--description">
             <span class="production__title production__title--tablet title">Процесс производства</span>
             <p class="production__description description">По просьбам наших любимых фолловеров мы сняли для вас
-              подробное
-              видео о том, как появляются наши товары.</p>
+              подробное видео о&nbsp;том, как появляются наши товары.</p>
             <button class="production__button transparent-button"><span class="transparent-button__description">сделать
                 заказ</span></button>
           </div>
@@ -320,11 +318,32 @@
       <div class="modal-container__modal modal">
         <p class="modal__title title">Добавить в корзину</p>
         <p class="modal__description description">Выберите размер:</p>
-        <div class="modal__buttons size">
-          <button type="button" class="size__button size__button--checked" aria-label="размер S">s</button>
-          <button type="button" class="size__button" aria-label="размер M">m</button>
-          <button type="button" class="size__button" aria-label="размер L">l</button>
-        </div>
+        <form class="modal__buttons size">
+          <fieldset class="size__radio fieldset">
+            <legend class="visually-hidden">Выбрать размер</legend>
+            <ul class="size__list list">
+              <li class="size__item">
+                <label class="size__label" for="small" aria-label="Малый">
+                  <input class="size__input input visually-hidden" type="radio" id="small" value="small" name="size"
+                    checked>
+                  <span class="size__description"><span class="size__text">s</span></span>
+                </label>
+              </li>
+              <li class="size__item">
+                <label class="size__label" for="medium" aria-label="Между малым и средним">
+                  <input class="size__input input visually-hidden" type="radio" id="medium" value="medium" name="size">
+                  <span class="size__description"><span class="size__text">m</span></span>
+                </label>
+              </li>
+              <li class="size__item">
+                <label class="size__label" for="large" aria-label="Средний">
+                  <input class="size__input input visually-hidden" type="radio" id="large" value="large" name="size">
+                  <span class="size__description"><span class="size__text">l</span></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
         <button type="button" class="modal__button green-button">Добавить</button>
       </div>
     </div>

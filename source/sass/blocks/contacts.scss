@@ -1,22 +1,7 @@
 @use "../global/variables.scss";
 
-.contacts {
-  padding-bottom: 39px;
-
-  @media (min-width: variables.$screen-tablet) {
-    padding-bottom: 57px;
-  }
-
-  @media (min-width: variables.$screen-desktop) {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    padding-bottom: 0;
-  }
-}
-
 .contacts__wrapper {
-  padding-top: 38px;
+  padding-top: 42px;
   padding-bottom: 62px;
 
   @media (min-width: variables.$screen-tablet) {
@@ -26,33 +11,50 @@
 
   @media (min-width: variables.$screen-desktop) {
     margin: 0;
-    padding-top: 71px;
-    padding-left: 175px;
-    padding-bottom: 105px;
+    padding: 71px 61px 105px 174px;
   }
 }
 
 .contacts__container {
-  @media (min-width: variables.$screen-tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
+  &--main {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+
+    @media (min-width: variables.$screen-tablet) {
+      padding-bottom: 57px;
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 0;
+    }
   }
 
-  @media (min-width: variables.$screen-desktop) {
-    display: block;
-    width: 290px;
-    padding-bottom: 145px;
+  &--adress {
+    @media (min-width: variables.$screen-tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: variables.$screen-desktop) {
+      display: block;
+      width: 290px;
+      padding-bottom: 136px;
+    }
   }
 }
 
 .contacts__title {
-  padding-bottom: 28px;
+  padding-bottom: 31px;
+  letter-spacing: -0.5px;
 
   @media (min-width: variables.$screen-tablet) {
     font-size: 43px;
     line-height: 50px;
-    padding-bottom: 49px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: variables.$screen-desktop) {
@@ -71,7 +73,7 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }
 
@@ -91,14 +93,14 @@
 
   @media (min-width: variables.$screen-desktop) {
     position: absolute;
-    left: 228px;
+    left: 225px;
     bottom: 105px;
     max-height: 120px;
   }
 }
 
 .contacts__location {
-  padding-bottom: 42px;
+  padding-bottom: 39px;
 
   @media (min-width: variables.$screen-tablet) {
     padding-bottom: 55px;
