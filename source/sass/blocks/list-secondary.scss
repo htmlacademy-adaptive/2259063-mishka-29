@@ -9,7 +9,11 @@
   }
 
   @media (min-width: variables.$screen-desktop) {
-    width: 450px;
+    width: 390px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
   }
 }
 
