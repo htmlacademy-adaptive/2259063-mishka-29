@@ -1,5 +1,20 @@
 @use "../global/variables.scss";
 
+.cart-button {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover .cart-button__icon {
+      transition: 0.2s;
+      background-color: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active {
+      transition: 0.2s;
+      opacity: 0.3;
+    }
+  }
+}
+
 .cart-button__icon {
   display: block;
   mask-image: url("../img/stack/sprite.svg#cart");

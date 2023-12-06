@@ -278,7 +278,6 @@
       font-size: 17px;
       line-height: 24px;
       padding: 31.5px 0;
-      border-right: 1px solid #ececec;
     }
 
     &--order {
@@ -296,6 +295,11 @@
 
     &--secondary {
       flex-basis: 185px;
+      scroll-snap-align: start;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ececec;
+      }
     }
 
     &--hero {
