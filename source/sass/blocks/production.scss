@@ -45,21 +45,6 @@
       flex-shrink: 0;
       flex-grow: 1;
     }
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover .video__button {
-        transition: width 0.15s;
-        width: 121px;
-        height: 92px;
-      }
-
-      &:active .video__button {
-        width: 81px;
-        height: 62px;
-        opacity: 0.3;
-        transition: all 0.15s;
-      }
-    }
   }
 
   &--description {
