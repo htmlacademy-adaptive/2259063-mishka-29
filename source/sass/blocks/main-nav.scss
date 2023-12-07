@@ -295,8 +295,9 @@
 
     &--secondary {
       flex-basis: 185px;
-      scroll-snap-align: start;
+    }
 
+    &--top {
       &:not(:last-child) {
         border-right: 1px solid #ececec;
       }
